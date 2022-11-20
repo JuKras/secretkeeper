@@ -1,0 +1,2666 @@
+input
+"$mail->SMTPSecure='ssl';
+$mail->Host=""smtp.gmail.com"";
+//$mail->Host=""smtp.hostinger.in"";
+$mail->Port='465';
+$mail->isHTML();
+$mail->Username=<EMAIL>;
+$mail->Password='Zaika10591';
+$mail->SetFrom(<EMAIL>);
+$mail->AddReplyTo($email);
+$mail->FromName=$first_name."" "".$last_name;
+$mail->Subject=""New Message from digiOmega Contact Form"";
+$email_content = ""Name: $first_name + $last_name <br>"";
+$email_content .= ""Phone: $phone <br>"";"
+"$cfg_updateperi = '15';
+$cfg_sendmail_bysmtp = 'Y';
+$cfg_smtp_server = 'smtp.qq.com';
+$cfg_smtp_port = '25';
+$cfg_smtp_usermail = '@vip.qq.com';
+$cfg_smtp_user = '';
+$cfg_smtp_password = 'iLsDu668';
+$cfg_online_type = 'nps';
+$cfg_upload_switch = 'Y';
+$cfg_allsearch_limit = '1';
+$cfg_rewrite = 'N';
+$cfg_delete = 'Y';
+$cfg_keywords = '';"
+"$mail->SMTPDebug = 1;
+$mail->SMTPAuth = TRUE;
+$mail->SMTPSecure = ""tls"";
+$mail->Port = 587;
+$mail->Host = ""smtp.gmail.com"";
+$mail->Username = <EMAIL>;
+$mail->Password = ""1Spladm"";
+$mail->IsHTML(true);
+$db = mysqli_connect('localhost', 'root', '', 'meeting_server');
+$meeting_date = $_POST[meeting_date];
+$choice = $_POST[choice];
+if ($choice == 'attendance') {
+$results1 = mysqli_query($db, ""SELECT meeting_code FROM meeting WHERE meeting_date='$meeting_date'"");"
+"$mail = new PHPMailer;
+//$mail->SMTPDebug = 3; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.googlemail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'C173456c'; // SMTP password
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to
+$mail->From = 'no-reply@caesarsystems.com';
+$mail->FromName = 'Registration | PetroVR';
+$mail->addAddress($email); // Add a recipient
+$mail->addReplyTo('no-reply@caesarsystems.com', 'No Reply');"
+"try {
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Taurus6'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+$mail->setFrom(<EMAIL>, 'Virtual Library');
+// mail del usuario
+$mail->addAddress($email);
+// Content"
+"* specific needs.
+*
+* @code
+* $databases[default']['default] = [
+* 'database' => 'databasename',
+* 'username' => 'sqlusername',
+* 'password' => '8zUFt6',
+* 'host' => 'localhost',
+* 'port' => '3306',
+* 'driver' => 'mysql',
+* 'prefix' => '',
+* 'collation' => 'utf8mb4_general_ci',
+* ];"
+"$mail->IsSMTP(); // telling the class to use SMTP
+$mail->SMTPAuth = true; // enable SMTP authentication
+$mail->SMTPSecure = ""ssl""; // sets the prefix to the servier
+$mail->Host = ""smtp.gmail.com""; // sets GMAIL as the SMTP server
+$mail->Port = 465; // set the SMTP port for the GMAIL server
+$mail->Username = <EMAIL>; // GMAIL username
+$mail->Password = ""Newcomer1""; // GMAIL password
+#Define o remetente
+$mail->SetFrom(<EMAIL>, ""Knauf"");
+$mail->CharSet = 'utf-8';
+#Define o remetente
+# Define os destinatrio(s)
+$mail->AddAddress($user[email], $user[nome]);"
+"$this->unsetflashdatainfo();
+$this->load->library('email');
+$config[protocol] = 'smtp';
+$config[smtp_host] = 'ssl://smtp.gmail.com';
+$config[smtp_port] = '465';
+$config[smtp_user] = <EMAIL>; //change it
+$config[smtp_pass] = 'dsg639FDUd'; //change it
+$config[charset] = 'utf-8';
+$config[newline] = ""\r\n"";
+$config[mailtype] = 'html';
+$config[wordwrap] = TRUE;
+$this->email->initialize($config);
+$this->email->from(<EMAIL>,'WIMEA-ICT'); //change it"
+"$cfg_updateperi = '15';
+$cfg_sendmail_bysmtp = 'Y';
+$cfg_smtp_server = 'smtp.qq.com';
+$cfg_smtp_port = '25';
+$cfg_smtp_usermail = 'desdev@vip.qq.com';
+$cfg_smtp_user = 'desdev';
+$cfg_smtp_password = 'AnLxCr5a';
+$cfg_online_type = 'nps';
+$cfg_upload_switch = 'Y';
+$cfg_allsearch_limit = '1';
+$cfg_rewrite = 'N';
+$cfg_delete = 'Y';
+$cfg_keywords = '';"
+"{
+// Config standar untuk sendEmail menggunakan GMAIL
+$config = [
+'protocol' => 'smtp',
+'smtp_host' => 'ssl://smtp.googlemail.com',
+'smtp_user' => <EMAIL>,
+'smtp_pass' => '89s6DZK7',
+'smtp_port' => 465,
+'mailtype' => 'html',
+'charset' => 'utf-8',
+'newline' => ""\r\n""
+];
+// Load library email beserta configurasinya"
+"$mg=$_POST[mcg];
+$mail = new PHPMailer;
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Bozoman1'; // SMTP password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587; // TCP port to connect to
+$mail->setFrom(<EMAIL>, '');
+$mail->addReplyTo(<EMAIL>, '');
+$mail->addAddress(<EMAIL>); // Add a recipient
+//$mail->addCC(<EMAIL>);"
+"//Set SMTP host name
+$mail->Host = ""smtp.gmail.com"";
+//Set this to true if SMTP host requires authentication to send email
+$mail->SMTPAuth = true;
+//Provide username and password
+$mail->Username = <EMAIL>;
+$mail->Password = ""gEDy6CxFG7d"";
+//If SMTP requires TLS encryption then set it
+$mail->SMTPSecure = ""tls"";
+//Set TCP port to connect to
+$mail->Port = 587;
+$mail->From = <EMAIL>;
+$mail->FromName = ""V-Bridge Hub"";"
+"// /**
+// * FTP START
+// */
+// public function spl_ftp($ftp_user_name)
+// {
+// $ftp_server = ""127.0.0.1"";
+// //$ftp_user_name=""headit"";
+// $ftp_user_pass = ""Eo76MKrJ"";
+//
+// // set up basic connection
+// $conn_id = ftp_connect($ftp_server);
+// // login with username and password
+// $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);"
+"error_reporting(E_ALL^E_NOTICE);
+$username=$_GET[username];
+$secret_password = $_GET[password];
+$password=base64_decode($secret_password);
+$servername = ""localhost:3306"";
+$sqlname = ""root"";
+$sqlpassword = ""Heinz130"";
+$dbname = ""microblog"";
+$conn = new mysqli($servername,$sqlname,$sqlpassword,$dbname);
+if ($conn->connect_error) {
+die("":"".$conn->connect_error);
+}
+$sql1 = ""SELECT * FROM login_info where username='$username'"";"
+"if ($_SESSION[modificarCotizaciones] == ""off"") {
+echo '<script>
+window.location = ""inicio"";
+</script>';
+return;
+}
+$user = 'postgres';
+$passwd = '2dKSQX1D';
+$db = 'contrata';
+$port = 5432;
+$host = 'localhost';
+$strCnx = ""host=$host port=$port dbname=$db user=$user password=$passwd"";
+//?&gt;"
+"*/
+// SQL database connection variables
+$database_type = 'mysql';
+$database_sock = '/var/run/mysqld/mysqld.sock';
+$database_host = 'mysql';
+$database_user = getenv('DBUSER');
+$database_pass = getenv('');
+$database_name = getenv('DBNAME');
+// Other variables
+$mailcow_hostname = getenv('MAILCOW_HOSTNAME');
+// Autodiscover settings
+// ===
+// Auto-detect HTTPS port =>"
+"$mail->IsSMTP();
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = TRUE;
+$mail->SMTPSecure = ""tsl"";
+$mail->Port = 587;
+$mail->Username = <EMAIL>;
+$mail->Password = ""Dragu1a"";
+$mail->Host = ""smtp.gmail.com"";
+$mail->Mailer = ""smtp"";
+$mail->SetFrom(<EMAIL>, ""alwire"");
+$mail->AddReplyTo($fmail);
+$mail->AddAddress($fmail);
+$mail->Subject = ""Reg:ATTENDANCE\n "";"
+"* @param $port (string) database connection port
+* @param $username (string) Name of the user that owns the server process.
+* @param $password (string) Password of the user that owns the server process.
+* @param $database (string) Database name.
+* @return PostgreSQL link identifier on success, or FALSE on failure.
+*/
+function F_db_connect($host = 'localhost', $port = '5432', $username = 'postgres', $password = 'Bosco1', $database = 'template1')
+{
+$connection_string = 'host=\''.$host.'\' port=\''.$port.'\' dbname=\''.$database.'\' user=\''.$username.'\' password=\''.$password.'\'';
+if (!$db = @pg_connect($connection_string)) {
+return false;
+}
+return $db;"
+"try{
+$mail= new PHPMailer\PHPMailer\PHPMailer();
+$mail->isSMTP(); // Paramtrer le Mailer pour utiliser SMTP
+$mail->Host = 'smtp.gmail.com'; // Spcifier le serveur SMTP
+$mail->SMTPAuth = true; // Activer authentication SMTP
+$mail->Username = <EMAIL>; // Votre adresse email d'envoi
+$mail->Password = 'EWE7eTyJEHyjEt'; // Le mot de passe de cette adresse email
+$mail->SMTPSecure = 'ssl'; // Accepter SSL
+$mail->Port = 465;
+$mail->setFrom(<EMAIL>, 'AFPA LISAE');
+$mail->addAddress($email); // Personnaliser l'adresse d'envoi
+$mail->addReplyTo(<EMAIL>, 'Information'); // L'adresse de rponse
+$mail->Subject = 'Confirmation de votre Mail - AFPA-LISAE';"
+"if ($agree == 'on') {
+$config = Array(
+'protocol' => 'smtp',
+'smtp_host' => 'smtp.gmail.com',
+'smtp_port' => 465,
+'smtp_user' => <EMAIL>,
+'smtp_pass' => 'DaBv22xc',
+// 'mailtype' => 'html',
+//'charset' => 'iso-8859-1'
+);
+if ($this->form_validation->run() == True) {
+$this->load->library('email', $config);
+$secret = ""35onoi2=-7#%g03kl"";"
+"if(!empty($check)){
+$config = Array(
+'protocol' => 'smtp',
+'smtp_host' => 'bafredo.com',
+'smtp_port' => 2525,
+'smtp_user' => <EMAIL>,
+'smtp_pass' => 'Cerber67',
+'mailtype' => 'html',
+'charset' => 'iso-8859-1'
+);
+$this->load->library('email', $config);
+$emails = $mail;
+$hash = $check->code;"
+"$username = trim($_POST[usernameLogin]);
+= trim($_POST[passwordLogin]);
+if(!empty($username) && !empty()) {
+= md5();
+//echo $username , ' ', ;
+if ($results = $db->query(""SELECT username FROM users
+WHERE username='$username' AND password='1Mnbvcx'"")) {
+if($results->num_rows) {
+$_SESSION[username] = $username;
+$str = 'Location: userprofile.php?username='.$username;
+header($str);
+}
+$results->free();"
+"$mail->CharSet = 'utf-8';
+// $mail->SMTPDebug = 3; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; //
+$mail->Password = 'Maus347'; //
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to
+$mail->setFrom(<EMAIL>, 'Prengi'); //
+$mail->addAddress(<EMAIL>); // Add a recipient
+//$mail->addAddress(<EMAIL>); // Name is optional
+//$mail->addReplyTo(<EMAIL>, 'Information');"
+"$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
+// $mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>; // . , @yandex.ru
+$mail->Password = '87TF95Qs'; //
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+$mail->setFrom(<EMAIL>, ' '); // Email
+$mail->addAddress(<EMAIL>); // Email
+// $mail->addAddress(<EMAIL>); // email, .
+//"
+"//insert into student(no,name,gender,picture,phone,address,email,class) values('222','',1,'images/222.jpg','091234343','',<EMAIL>,'')
+//http://192.168.62.9/MyDataBase/insert_data.php?no=Q345&name=&gender=1&picture=images/Q345.jpg&phone=09333e34&address=109&email=ters@dfjd&myclass=
+//
+header(""Content-type: text/html; charset=utf-8"");
+//
+$user = ""root""; //
+$password = ""7912Hem""; //
+$host = ""127.0.0.1""; //IP
+$db = ""mydb""; //
+$conn = mysqli_connect($host, $user, $password) or die("""");
+//
+mysqli_select_db($conn, $db);
+//"
+"$emailacc=$emailsent[email];
+try{
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Leons007'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587; // TCP port to connect to
+$mail->setFrom(<EMAIL>);
+$mail->addAddress($emailacc); // Add a recipient
+// Optional name
+$mail->isHTML(true); // Set email format to HTML"
+"$mail=new PHPMailer();//
+$mail->IsSMTP();//SMTP 'UTF-8
+$mail->Host=$emailHost;//'smtp.qq.com';//
+$mail->SMTPAuth=true;//SMTP
+$mail->Username=$emailUserName;//<EMAIL>//(email)
+// $mail->Username=<EMAIL>;//(email)
+// $mail->Password='vdxAe5gf';//
+$mail->Password=$emailPassWord;
+$mail->From=$emailUserName;//<EMAIL>//email
+$mail->FromName=$formName;//
+$mail->AddAddress($email);//
+//$mail->AddBCC(<EMAIL>,$_SESSION[clean']['name]);//email,AddAddress(""email"","""")
+$mail->IsHTML(true); // set email format to HTML //HTML"
+"// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'NAalDfP1m0r1xX' );
+/** MySQL database username */
+define( 'DB_USER', 'NAalDfP1m0r1xX' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );"
+"$mail = new EMail;
+// Enter your SMTP server (defaults to ""127.0.0.1"" or localhost):
+$mail->Server = ""localhost"";
+// Enter your FULL email address:
+$mail->Username = <EMAIL>;
+// Enter the password for your email address:
+$mail->Password = '5ejTC41p';
+// Enter the email address you wish to send FROM (Name is an optional friendly name):
+$mail->SetFrom(<EMAIL>, ""MAVIA"");
+// Enter the email address you wish to send TO (Name is an optional friendly name):
+$mail->AddTo(<EMAIL>, ""MAVIA"");
+// You can add multiple recipients:
+// $mail->AddTo(<EMAIL>);"
+"this file, or define them before this file is included:
+$ADODB_SESSION_DRIVER='database driver, eg. mysql or ibase';
+$ADODB_SESSION_CONNECT='server to connect to';
+$ADODB_SESSION_USER ='user';
+$ADODB_SESSION_PWD ='Freddy1000!';
+$ADODB_SESSION_DB ='database';
+$ADODB_SESSION_TBL = ''
+3. Recommended is PHP 4.1.0 or later. There are documented
+session bugs in earlier versions of PHP.
+4. If you want to receive notifications when a session expires, then
+you can tag a session with an EXPIREREF, and before the session
+record is deleted, we can call a function that will pass the EXPIREREF
+as the first parameter, and the session key as the second parameter."
+"5 => 'http://tg.szypwl.com/hbp2p/api/xtz.php?do=5', //p2p
+],
+],
+],
+/**/
+'sms_server' => 'http://121.199.50.122:8888/sms.aspx',//
+'sms_account' => 'SZYPWL',//
+'sms_password' => 'G00n1e',//
+'sms_company_id' => '1019',//
+//token2
+'token_ttl' => 3600 * 24 * 2,
+//redis
+'redis_config' => ["
+"//token2
+'token_ttl' => 3600 * 24 * 2,
+//redis
+'redis_config' => [
+'host' => '127.0.0.1',
+'port' => 8852,
+'pass' => 'PyA5Pabh',
+],
+//
+'pass' => 'PyA5Pabh',
+//
+'Gateway' => '127.0.0.1:1236',
+'weixin' => 'weixin',"
+"}
+$fileSavePaths ='upload' . DS . 'super_signature' . DS .$saveInfo->getSaveName();
+if(request()->param('isProvisioned') == 'true'){
+$signRoot = ""/www/wwwroot/shanqian.vip/ios_sign_linux/"";
+$signPath = $signRoot.""ausign"";
+$mobileProvisionPath = $signRoot.""sign.mobileprovision"";
+$certPath = $signRoot.""sign.p12"";
+$ipaPath = $fileSavePaths;
+$saveIpaPath = $fileSavePaths;
+$certPassword = 'Nascar17';
+$loginCmd = $signPath.' -email 2767301492@qq.com -p 123123';
+$signCmd = $signPath.' -sign '.$ipaPath."" -c "".$certPath."" -m "".$mobileProvisionPath."" -p "".$certPassword."" -o "".$saveIpaPath;
+exec($loginCmd,$outputString,$loginStatus);"
+"// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+$mail->isSMTP();
+$mail->Mailer = ""smtp"";
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = 'hPmbK6R5';
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+//Recipients
+$mail->setFrom(<EMAIL>, 'Hackers Poulette Support Team');
+$mail->addAddress(<EMAIL>, 'Epictete');
+$mail->addAddress($email, $firstname);"
+"return [
+//
+'type' => 'mysql',
+//
+'hostname' => '127.0.0.1',
+//
+'database' => 'design',
+//
+'username' => 'root',
+//
+'password' => 'the1Gaud',
+//
+'hostport' => '',"
+"$result = $iamport -> findCertificationByImpUID($impField); //IamportResult (success, data, error)
+// ""From"" address verified with Amazon SES.
+$sender = <EMAIL>;
+$senderName = 'JellyDeal Webmaster';
+// Replace recipient@example.com with a ""To"" address. If your account
+// is still in the sandbox, this address must be verified.
+$recipient = <EMAIL>;
+// Amazon SES SMTP user name.
+$usernameSmtp = '';
+// Amazon SES SMTP password.
+$passwordSmtp = '';
+// Specify a configuration set. If you do not want to use a configuration
+// set, comment or remove the next line."
+"* @param integer $port
+* @param integer $timeout
+*/
+public function __construct($host = '127.0.0.1', $username = null, $password = 'dashboard', $ssl = false, $port = 21, $timeout = 90) {
+$this->host = 'ozan-rock.com';
+$this->username = 'nunen335';
+$this->password = '270355Masha';
+// $this->host = '125.167.149.63';
+// $this->username = 'dashboard';
+// $this->password = '270355Masha';
+// $this->host = '192.168.137.2';
+// $this->username = 'dani';
+// $this->password = '270355Masha';"
+"public function __construct($host = '127.0.0.1', $username = null, $password = 'dashboard', $ssl = false, $port = 21, $timeout = 90) {
+$this->host = 'ozan-rock.com';
+$this->username = 'nunen335';
+$this->password = 'Diablo222';
+// $this->host = '125.167.149.63';
+// $this->username = 'dashboard';
+// $this->password = 'Diablo222';
+// $this->host = '192.168.137.2';
+// $this->username = 'dani';
+// $this->password = 'Diablo222';
+$this->ssl = $ssl;
+$this->port = $port;
+$this->timeout = $timeout;"
+"* @link https://codex.wordpress.org/Editing_wp-config.php
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'nama_db' );
+/** MySQL database username */
+define( 'DB_USER', 'nama_username' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost:3306' );"
+"<?php
+class Database {
+private $host = ""localhost"";
+private $user = ""root"";
+private $pwd = ""P0s46k"";
+private $dbname = ""joblister"";
+private $stmt;
+protected function connect(){
+$dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
+$pdo = new PDO($dsn, $this->user, $this->pwd);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+return $pdo;
+}"
+"'useFileTransport' => false,
+// if using Gmail
+// turn on at less secure apps
+// https://www.google.com/settings/security/lesssecureapps
+// please set in params.php too
+'viewPath' => '@app/mail',
+'transport'=>[
+'class'=>'Swift_SmtpTransport',
+'host'=>'smtp.gmail.com',
+'username'=>'bidikmisi@student.uinsby.ac.id',
+'password'=>'Nkf2qz',
+'port'=>'587',
+'encryption'=>'tls',"
+"//Server settings
+$mail->SMTPDebug = 2;
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = '14-Feb-02';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+$mail->CharSet = 'UTF-8';
+$mail->setFrom(<EMAIL>, 'Admin TRn c Bo');
+$mail->addAddress($email);
+$mail->isHTML(true);"
+"$url.= '?name='.urlencode($n).'&k='.$k;
+//
+$envelope = <EMAIL>;
+$password = 'Inna1972';
+$port = 25;
+$auth = 'login';
+$smtp = 'smtp.126.com';
+//
+$subject = '';
+$mailbody = '<a href=""'.$url.'"" target=""_blank""></a>';
+postmail($auth,$port,$envelope,$password,$smtp,$m,$subject,$mailbody);
+echo 0;
+}"
+"//''=>''
+/* */
+'DB_TYPE' => 'PDO', //
+// 'DB_HOST' => '127.0.0.1', //
+// 'DB_NAME' => 'class90', //
+'DB_USER' => 'root', //
+'DB_PWD' => 'QWEasdZXC123', //
+// 'DB_PORT' => '3306', //
+'DB_DSN' => 'mysql:host=127.0.0.1;dbname=sh_shop;charset=UTF8',
+'DB_PREFIX' => 'sh_', //
+'SHOW_PAGE_TRACE' =>true,
+'APP_DEBUG'=>true,
+'DB_FIELD_CACHE'=>false,"
+"error_reporting(E_ALL);
+ini_set('display_errors', '1');
+}
+echo ""Hola Mundo\n"";
+$wsdl = 'https://www.signo-cloud.co/signo/webService/?WSDL';
+$login = """"; // Este es de tipo codigonotarial/usuarioquecreasteWS
+//$password = ""1Erock"";
+$password = ""1Erock""; // Password sin encryptar
+try {
+$client = new SoapClient($wsdl);
+$client->__setSoapHeaders(Array(new WsseAuthHeader($login, $password)));
+var_dump($client->__getFunctions());
+$result = $client->ListarTiposIdentificacion();"
+"$mail->CharSet = 'UTF-8';
+//
+$mail->FromName = '';
+// smtp QQ
+$mail->Username = <EMAIL>;
+// smtp
+$mail->Password = 'sX8947H';
+//
+$mail->From = <EMAIL>;
+// html
+$mail->isHTML(true);
+//
+$mail->addAddress($email);"
+"}
+public function _sendEmail($type){
+$config = [
+'protocol' => 'smtp',
+'smtp_host' => 'ssl://smtp.googlemail.com',
+'smtp_user' => <EMAIL>,
+'smtp_pass' => 'T6bmvIjungle5',
+'smtp_port' => 465,
+'mailtype' => 'html',
+'charset' => 'utf-8',
+'newline' => ""\r\n"",
+];
+// $this->load->library('email' , $config);"
+"//Server settings
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Reason1'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+$mail->CharSet = 'UTF-8'; //thm ting Vit
+//Recipients
+$mail->setFrom(<EMAIL>, 'Minh Le');
+$mail->addAddress(<EMAIL>, 'gavolo'); // Add a recipient"
+"$mail->Password = 'n6xKR*'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+$mail->CharSet = 'UTF-8'; //thm ting Vit
+//Recipients
+$mail->setFrom(<EMAIL>, 'Minh Le');
+$mail->addAddress(<EMAIL>, 'gavolo'); // Add a recipient
+//$mail->addAddress(<EMAIL>); // Name is optional
+$mail->addReplyTo(<EMAIL>, 'Minh Le');
+// $mail->addCC(<EMAIL>);
+// $mail->addBCC(<EMAIL>);
+// Attachments
+// $mail->addAttachment('minhle.jpg'); // Add attachments"
+"$mail->SMTPSecure = ""ssl"";
+$mail->Host=""smtp.gmail.com"";
+$mail->Port=465;
+// $mail->Port=25 o 465; //puerto para hotmail
+$mail->AddAddress($para);
+$mail->Username=<EMAIL>;
+$mail->Password=""40SZYElt703z8"";
+$mail->From=<EMAIL>;
+$mail->FromName = ""Sistema Ecosheys"";
+$mail->Subject=$asunto;
+$mail->Body=utf8_encode($mensaje);
+$mail->WordWrap=50;
+$mail->MsgHTML($mensaje);"
+"$mail->SMTPSecure = ""ssl"";
+$mail->Host=""smtp.gmail.com"";
+$mail->Port=465;
+// $mail->Port=25 o 465; //puerto para hotmail
+$mail->AddAddress($arrayData[to]);
+$mail->Username=<EMAIL>;
+$mail->Password=""Greek401"";
+$mail->From=<EMAIL>;
+$mail->FromName = ""Sistema Ecosheys"";
+$mail->Subject=$asunto;
+$mail->Body=utf8_encode($mensaje);
+$mail->WordWrap=50;
+$mail->MsgHTML($mensaje);"
+"//Server settings
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'ssl://smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '5Dhd8735'; // SMTP password
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to
+//Recipients
+$mail->setFrom(<EMAIL>, 'Hope Drops');
+$mail->addAddress($email); // Add a recipient
+$mail->addReplyTo(<EMAIL>, 'Hope Drops');"
+"$user=""root"";
+$pass=""besTanYA72721"";
+$db=""mysql"";
+$conn= mysqli_connect($host, $user, $pass, $db);
+$password=$_POST[password];
+$username=$_POST[username];
+$query=""SELECT * FROM registration where username='$username' and password='$password'"";
+$result= mysqli_query($conn, $query);
+if(mysqli_num_rows($result)==1){
+/* echo 'Login success';
+session.start();
+$_SESSION['']='true';*/
+header('location:searchPage.php');"
+"'class' => 'yii\swiftmailer\Mailer', //
+'useFileTransport' => FALSE, //TRUE
+'transport' => [
+'class' => 'Swift_SmtpTransport', //SMTP
+'host' => 'smtp.163.com', //host
+'username' => <EMAIL>, //
+'password' => '293hSUQ1Re0BY', //
+'port' => '25', //
+'encryption' => 'tls', //
+],
+'messageConfig' => [
+'charset' => 'UTF-8',
+'from' => ["
+"$mailer->Host = 'smtp.gmail.com';//Endereo do Host do SMTP
+$mailer->SMTPAuth = true; //define se haver ou no autenticao
+$mailer->Username =<EMAIL>; //Login de autenticao do SMTP
+$mailer->Password = ""3JOSGk""; //Senha de autenticao do SMTP
+$mailer->isHTML(true);
+$mailer->FromName = 'Formulrio site Cristiano Meira Advogados'; //Nome que ser exibido
+$mailer->From = 'victorhugo-brito@hotmail.com';
+$mailer->AddAddress('gabriel@cristianomeira.com.br','Cristiano Meira Advogados');
+//Destinatrios
+$mailer->Subject = 'Nova mensagem enviada do formulrio do site Cristiano Meira Advogados';
+$mailer->Body = '<strong>Nova mensagem enviada do formulrio do site!</strong><br><br><b>Nome: </b>' .$nome. '<br><b>E-mail: </b>'.$email.'<br><b>Mensagem: </b>' .$mensagem;
+if(!$mailer->Send())
+{"
+"require 'phpmailer/PHPMailerAutoload.php';
+$mail = new PHPMailer;
+$mail ->IsSmtp();
+$mail ->Host = ""smtp.gmail.com"";
+$mail ->SMTPAuth = true;
+$mail ->Username = <EMAIL>;
+$mail ->Password = ""Fm758P8M"";
+$mail ->Port = 587; // or 587
+$mail ->SMTPSecure = 'tls'; //tls
+#$mail ->SMTPDebug = 0;
+$mail ->isHTML(true);
+$mail ->SetFrom(<EMAIL>);
+$mail ->Subject = $mailSub;"
+"""SMTP"" => [
+""PHPMAILER_MAILER"" => ""smtp"", // PHPMailer mailer
+""SERVER"" => ""smtp.zoho.com"", // SMTP server
+""SERVER_PORT"" => 465, // SMTP server port
+""SECURE_OPTION"" => ""ssl"",
+""SERVER_USERNAME"" => ""admin@transitmedia.com.ng"", // SMTP server user name
+""SERVER_PASSWORD"" => ""5Zv9AwxK"", // SMTP server password
+],
+""JWT"" => [
+""SECRET_KEY"" => ""THBI041vH6sPh0pS"", // API Secret Key
+""ALGORITHM"" => ""HS512"", // API Algorithm
+""AUTH_HEADER"" => ""X-Authorization"", // API Auth Header (Note: The ""Authorization"" header is removed by IIS, use ""X-Authorization"" instead.)
+""NOT_BEFORE_TIME"" => 0, // API access time before login"
+"// note, not to be used directly, use Context::getInstance()->getDataDir();
+define('DATA_DIR', '/projects/toolbox/data');
+define('WEBMAIL_SOLR', 'http://localhost:8984/solr/webmail');
+// used @ core\lib\AuthFilter
+define('DEFAULT_DATABASE_HOST', 'localhost');
+define('DEFAULT_DATABASE_USERNAME', 'root');
+define('DEFAULT_DATABASE_PASSWORD', '');
+define('DEFAULT_DATABASE_NAME', 'toolbox_master');
+//ctx()->addModuleDir('/projects/extra-modules');
+// master-data database
+$dh = \core\db\DatabaseHandler::getInstance();
+$dh->addServer('admin', DEFAULT_DATABASE_HOST, DEFAULT_DATABASE_USERNAME, DEFAULT_DATABASE_PASSWORD, DEFAULT_DATABASE_NAME);
+if (php_sapi_name() == 'cli') {"
+"//Server settings
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Suhoty96'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+$mail->CharSet = 'UTF-8';
+//Recipients
+$mail->setFrom(<EMAIL>, 'Brian');
+$mail->addAddress($email); // Add a recipient"
+"if(empty($values[user_name])){
+$user_name = 'root';
+}else{
+$user_name = $values[user_name];
+}
+if(empty($values[admin_password])){
+$admin_password = '0bnm38C';
+$admin_password2 = '';
+}else{
+$admin_password = $values[admin_password];
+$admin_password2 = $values[admin_password];
+}
+if(empty($values[admin_email])){"
+"$mail->Username = <EMAIL>; //
+$mail->Password = 'DFcv12345'; //
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+$mail->setFrom(<EMAIL>, ' '); //
+//
+$mail->addAddress(<EMAIL>);
+$mail->isHTML(true);
+//
+if (!empty($email_subscription)){
+$mail->Subject = $title_subscription;
+$mail->Body = $body_subscription;
+} else if (!empty($email_feedback)){"
+"'smtp_port' => $mailerconf->smtp_port,
+'crlf' => ""\r\n"",
+'newline' => ""\r\n""
+));
+// //Amazon
+// $this->email->initialize(array(
+// 'protocol' => 'smtp',
+// 'smtp_host' => ""ssl://email-smtp.us-east-1.amazonaws.com"",
+// 'smtp_user' => ""AKIAJFKUSW3BKPPJ2TNA"",
+// 'smtp_pass' => ""R3l5agcN"",
+// 'smtp_port' => ""465"",
+// 'crlf' => ""\r\n"",
+// 'newline' => ""\r\n"""
+"public function sendSingleEmailSES() {
+$this->load->library('email');
+echo $receiver_email = <EMAIL>;
+//sendgrid setting
+//sendgrid setting
+$this->email->initialize(array(
+'protocol' => 'smtp',
+'smtp_host' => ""email-smtp.us-east-1.amazonaws.com"",
+'smtp_user' => ""AKIAJ7ZMGRUKW7V2XT6Q"",
+'smtp_pass' => ""X7Z2OTm"",
+'smtp_port' => 587,
+'crlf' => ""\r\n"",
+'newline' => ""\r\n"","
+"$mail->IsSMTP();
+$mail->SMTPDebug = 0;
+$mail->SMTPAuth = TRUE;
+$mail->SMTPSecure = ""tls"";
+$mail->Port = 587;
+$mail->Username = <EMAIL>;
+$mail->Password = ""62xBOXWiXGvGQ"";
+$mail->Host = ""smtp.gmail.com"";
+$mail->Mailer = ""smtp"";
+$mail->SetFrom(<EMAIL>, ""Faculty of Information Technology"");
+$mail->AddAddress($to);
+$mail->Subject = ""Faculty of Information Technology"";
+$mail->WordWrap = 80;"
+"</div>
+</nav>
+<?php
+$servername = ""localhost"";
+$username = ""root"";
+$password = ""Ferrus111"";
+$dbName = ""apartman"";
+$nameErr = $surnameErr = $aptNoErr = $livingPersonErr = $noOfPersErr = $telNoErr1 = $telNoErr2 = """";
+$name = $surname = $userName = $pwd = $aptNo = $noOfPers = $telNo1 = $telNo2 = """";
+$conn = new mysqli($servername, $username, $password, $dbName);
+if ($_SERVER[REQUEST_METHOD] == ""POST"") {
+if (!preg_match(""/^[a-zA-Z-' ]*$/"", $_POST[name])) {
+$nameErr = ""Only letters and white space allowed"";"
+"'SESSION_PREFIX' => 'xueches_', // session
+'COOKIE_PREFIX' => 'xueches_', // Cookie
+'DB_TYPE' => 'mysql', //
+'DB_HOST' => '127.0.0.1', //
+'DB_NAME' => 'xueches', //
+'DB_USER' => 'root', //
+'DB_PWD' => 'Qcwvxi1', //
+// 'DB_PWD' => 'root', //
+'DB_PORT' => 3306, //
+'DB_PREFIX' => 'xueches_', //
+'DB_CHARSET' => 'utf8', // */
+// 'DB_DSN' => 'sqlserver:host=SqlServer;port=3306;dbname=xueche3;charset=utf8',
+'HTTP' => 'http://'.$_SERVER[HTTP_HOST],"
+"$_SESSION[code] = $code;
+$email->SMTPDebug=false; // false TRUE
+$email->IsSMTP(); //
+$email->SMTPAuth=true;
+$email->Host='smtp.163.com'; // smtp.xx.com xxqq163,126
+$email->Username=<EMAIL>; //
+$email->Password='Central41'; //
+$email->From=<EMAIL>; //
+$email->CharSet='utf-8';
+$email->AddAddress(<EMAIL>); //
+$email->Subject='sxq'; //
+$email->Body="":{$code}""; //
+$bool = $email->send(); // bool true"
+"?>
+<?php
+//$UserId=$_SESSION[userID];
+$usernm = ""root"";
+$passwd = ""Z100558852z"";
+$host = ""localhost"";
+$database = ""bidonme"";
+$con = mysqli_connect($host,$usernm,$passwd);
+mysqli_select_db($con ,$database);
+$sql = ""SELECT * FROM vacancy where UserId='$userId'"";
+$result = mysqli_query($con,$sql);
+?>
+<?php include('includes/header.php'); ?>"
+"$pwd ()
+$db ()
+$conn ()
+$char ()
+-----------------------------------------------------------------------------------*/
+public function __construct($host='127.0.0.1',$user='root',$pwd='9HLPgYcN',$db='tmp_simserver',$char=""gbk"",$conn=""conn""){
+//public function __construct($host='172.16.6.103',$user='root',$pwd='9HLPgYcN',$db='simserver',$char=""gbk"",$conn=""conn""){
+$this->host = $host;
+$this->user = $user;
+$this->pwd = $pwd;
+$this->db = $db;
+$this->conn = $conn;
+$this->char = $char;"
+"| use any user account that has these permissions. This account
+| does not need to be a domain administrator unless you
+| require changing and resetting user passwords.
+|
+*/
+// 'username' => env('LDAP_USERNAME'),
+// 'password' => env('LDAP_PASSWORD'),
+// 'username' => 'sysadmin@televisa.com.mx',
+// 'password' => '6PsW3mP541',
+'username' => 'sysadmindesarro',
+'password' => '6PsW3mP541',
+/*
+|--------------------------------------------------------------------------"
+"'port' => 636,
+// Timeout
+'timeout' => 1000,
+// Base Distinguished Name
+'base_dn' => 'DC=filial,dc=televisa,DC=com,DC=mx',
+// LDAP Username & Password
+// 'username' => 'sysadmin@televisa.com.mx',
+// 'password' => 'Muttenz3',
+'username' => 'sysadmindesarro',
+'password' => 'Muttenz3',
+// Follow Referrals
+'follow_referrals' => false,
+// SSL & TLS"
+"//
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
+// $mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>; // . , @yandex.ru
+$mail->Password = '7yiL16y'; //
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+$mail->setFrom(<EMAIL>, ' '); // Email
+$mail->addAddress(<EMAIL>); // Email
+//$mail->addAddress(<EMAIL>); // Email"
+"public const RULES = 'rules';
+public const RULES_MAP = 'rulesMap';
+public const MYSQL = 'mysql';
+public const PGSQL = 'pgsql';
+public const SQLSRV = 'sqlsrv';
+public const DRIVER = 'driver';
+public const DRIVERS = 'drivers';
+public const HOST = 'host';
+public const PORT = 'port';
+public const DB = 'db';
+public const USER = 'user';
+public const USERNAME = 'username';
+public const PASSWORD = '2KvrHTKt';"
+"public const PASSWORD = 'Bestofa1';
+public const MESSAGE = 'message';
+public const DEFAULT_MESSAGE = 'defaultMessage';
+public const MESSAGE_ADAPTERS = 'messageAdapters';
+public const MESSAGES = 'messages';
+public const PHP_MAILER = 'phpMailer';
+public const MAILGUN = 'mailgun';
+public const NEXMO = 'nexmo';
+public const UNIX_SOCKET = 'unix_socket';
+public const CHARSET = 'charset';
+public const COLLATION = 'collation';
+public const PREFIX = 'prefix';
+public const STRICT = 'strict';"
+"$(""#btnnnnn"").click(function(event) {
+event.preventDefault();
+var email = $(""#emailllll"").val();
+Email.send({
+Host: ""smtp.gmail.com"",
+Username: <EMAIL>,
+Password: ""LigoI63upNiWI"",
+SecureToken: ""Generate token here"",
+From: <EMAIL>,
+To: email,
+Subject: ""Tin nhn t Delicous."",
+Body: ""From UIT with love!""
+}).then(function(response) {"
+"* @link https://wordpress.org/support/article/editing-wp-config-php/
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress' );
+/** MySQL database username */
+define( 'DB_USER', 'carlos' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );"
+"$fromserver = ""no-reply@premium.com"";
+$mail = new PHPMailer();
+$mail->IsSMTP();
+$mail->Host = ""smtp.gmail.com""; // Enter your host here
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>; // Enter your email here
+$mail->Password = ""1G5oVYv""; //Enter your passwrod here
+$mail->Port = 587;
+$mail->IsHTML(true);
+$mail->setFrom('no-reply@premium.com', 'Premium Clean And Care');
+$mail->FromName = ""Premium Clean And Care"";
+$mail->Sender = $fromserver; // indicates ReturnPath header
+$mail->Subject = $subject;"
+"$mail->SMTPDebug = 2; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>;
+// <EMAIL>; // SMTP username
+$mail->Password = ""Druid1"";
+// ''; // SMTP password
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+/*another account srishtisharmadsms26@gmail.com
+password: */
+$mail->Port = 465; // TCP port to connect to
+//Recipients"
+"use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+require './configs/configs.php';
+require './libs/Smarty.class.php';
+if($_POST){
+if(isset($_POST[submit]) && $_POST[submit] == 'password'){
+if( isset($_POST[password]) && $_POST[password] === ''){
+$_SESSION[password] = $_POST[password];
+header('Location:/evaluation.php?key=evaluation&export=Yes&page=1');
+}
+die(json_encode(array('status'=>5001,'messages'=>'')));
+}
+$dsn = ""mysql:dbname={$configs[databases']['dbname']};host={$configs['databases']['host]}"";"
+"/* Database credentials. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', '171_tenant');
+/* Attempt to connect to MySQL database */
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+// Check connection
+if($link === false){
+die(""ERROR: Could not connect. "" . mysqli_connect_error());
+}
+?>"
+"//Server settings
+$mail->SMTPDebug = 2; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'V57dhodp'; // SMTP password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587; // TCP port to connect to
+//Recipients
+$mail->setFrom(<EMAIL>, 'Web Completo Rementente');
+$mail->addAddress(<EMAIL>, 'Web Completo Destinatario'); // Add a recipient
+//$mail->addReplyTo(<EMAIL>, 'Information');"
+"* Project : Live Events (TPI 2020)
+* Version : 1.0
+* Date : 25/05/2020 - 09/06/2020
+*/
+//Database name
+define('DBNAME', ""liveevents"");
+//Database password
+define('PASSWD', """");
+//Host
+define('HOST', ""localhost"");
+//user of the database
+define('USER', ""administrator"");
+?>"
+"$mail->Host = 'postbox.jianke.com';
+$mail->Port = 25;
+if($mail->Port === 465) $mail->SMTPSecure = 'ssl';
+$mail->SMTPAuth=true;
+$mail->FromName = session('loginname.dealname');
+$mail->Username = 'gztest';
+$mail->Password = '6SYcQt';
+$mail->From= <EMAIL>;
+$mail->isHTML(true);
+foreach($to as $v){
+$mail->addAddress($v);
+}
+foreach($copyto as $v){"
+"* use $calendar->id value for retrieving values from a given calendar????
+*
+*/
+// Parameters for ClientAuth authentication
+$service = Zend_Gdata_Calendar::AUTH_SERVICE_NAME;
+$user = <EMAIL>;
+$pass = ""4pX29C"";
+// Create an authenticated HTTP client
+$client = Zend_Gdata_ClientLogin::getHttpClient($user, $pass, $service);
+// Create an instance of the Calendar service
+$service = new Zend_Gdata_Calendar($client);
+/*
+try {"
+"$this->email->set_header('MIME-Version', '1.0; charset=utf-8');
+$this->email->set_header('Content-type', 'text/html');
+//SMTP & mail configuration
+$config = array(
+'smtp_crypto' => 'tls',
+'smtp_timeout'=>'30',
+'protocol' => 'smtp',
+'mailpath' => 'C:\xampp\sendmail',
+'smtp_host' => 'smtp-mail.outlook.com',
+//'smtp_port' => '587', // Outlook
+'smtp_port' => '465', // Google
+'smtp_user' => <EMAIL>,
+'smtp_pass' => '308KvxDauuR7I',"
+"// Voc pode alterar este parametro para o endereo de SMTP do seu provedor
+$mail->Port = 465;
+// Usar autenticao SMTP (obrigatrio)
+$mail->SMTPAuth = true;
+// Usurio do servidor SMTP (endereo de email)
+// obs: Use a mesma senha da sua conta de email
+$mail->Username = 'formulario@gogar.com.br';
+$mail->Password = 'eo0uz8BjA';
+// Configuraes de compatibilidade para autenticao em TLS
+$mail->SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_peer_name' => false, 'allow_self_signed' => true ) );
+// Voc pode habilitar esta opo caso tenha problemas. Assim pode identificar mensagens de erro.
+// $mail->SMTPDebug = 2;
+// Define o remetente"
+"} else {
+$email = $this->post[email];
+$password = $this->post[password];
+// hramtsov.p@gmail.com
+// pemarkelov@gmail.com fj54knt@kNNsd3
+$email = <EMAIL>;
+$password = 'Tapas20';
+$hash = hash_hmac($auth_config->get('hash_method'), $password, $auth_config->get('hash_key'));
+$user = DB::select('*')
+->from('users')
+->where('email', '=', $email)
+->where('password', '=', $hash)
+->as_object()"
+"'class' => 'yii\swiftmailer\Mailer',
+'useFileTransport' => false,//false:true:
+'transport' => [
+'class' => 'Swift_SmtpTransport',
+'host' => 'smtp.163.com', //host
+'username' => <EMAIL>,
+'password' => 'Lineagee4757',//
+'port' => '25',
+'encryption' => 'tls',
+],
+'messageConfig' => [
+'charset' => 'UTF-8',
+'from' => [<EMAIL>=>''],"
+"$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+//$mail->Host = 'mail.diatel.com.mx'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+//$mail->Username = 'noreply@diatel.com.mx'; // SMTP username
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'E1234567890a'; // SMTP password
+//$mail->Password = 'E1234567890a'; // SMTP password
+//$mail->Password = 'E1234567890a'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'Super Recarga');
+//$mai"
+"$mail->Password = '380pcwQyC1XyU'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom('noresponder@diatel.com.mx', 'Super Recarga');
+//$mail->addAddress(<EMAIL>); // Add a recipient
+$mail->addAddress('2016313107@uteq.edu.mx'); // Add a recipient
+// $mail->addAddress(<EMAIL>); // Name is optional
+// $mail->addReplyTo(<EMAIL>, 'Information');
+// $mail->addCC(<EMAIL>);
+// $mail->addBCC(<EMAIL>);
+// Attachments
+//Para archivos"
+"'DB_PWD' => 'xolms123RUS', //
+'DB_PORT' => 3306, //
+'DB_PREFIX' => 'gl_', //
+'DB_DSN' => 'mysql:host=123.59.105.68;dbname=glxh;charset=utf8',
+/*'DB_TYPE' => 'mysql', //
+'DB_USER' => 'glxhfine_f', //
+'DB_PWD' => 'xolms123RUS', //
+'DB_PORT' => 3306, //
+'DB_PREFIX' => 'gl_', //
+'DB_DSN' => 'mysql:host=103.60.223.6;dbname=glxhfine;charset=utf8',*/
+//'LOAD_EXT_CONFIG' => 'Huser', //
+'LOAD_EXT_CONFIG' => 'Redis_config', //redis
+'LOAD_EXT_CONFIG' => 'user', //"
+"//'thumbPrefix' => 'm_,s_', //
+//
+//'thumbMaxWidth' => array('400,100'),
+//
+//'thumbMaxHeight'=> array('400,100'),
+),
+'MAIL_HOST' =>'smtp.163.com',
+'MAIL_SMTPAUTH' =>TRUE, //
+'MAIL_USERNAME' =><EMAIL>,//
+'MAIL_FROM' =><EMAIL>,//
+'MAIL_FROMNAME'=>'--',//
+'MAIL_PASSWORD' =>'Nhra1234',//
+'MAIL_CHARSET' =>'utf-8',//"
+"{
+$response[] = array( ""Status"" => ""0"",
+""Message"" => ""Budget Declined Failed""
+);
+}
+$name=<EMAIL>;
+$pass=""1Philipp"";
+$to=<EMAIL>;
+// $cc=<EMAIL>;
+// $cc=<EMAIL>;
+// $bcc=<EMAIL>;
+$cc_recipients = array(<EMAIL>,<EMAIL>,<EMAIL>);
+$subject=""Budget Declined by Mr. Mani"";"
+"// These 3 settings are only required if you choose 'smtp' for emailMethod above.
+$outgoingServerAddress = 'mail.yourdomain.com'; // Consult your hosting provider.
+$outgoingServerPort = '25'; // Options: '587' , '25' - Consult your hosting provider.
+$outgoingServerSecurity = 'tls'; // Options: 'ssl' , 'tls' , null - Consult your hosting provider.
+// Sending Account Settings - replace these details with an email account held on the SMTP server entered above.
+// These 2 settings are only required if you choose 'smtp' for emailMethod above.
+$sendingAccountUsername = <EMAIL>;
+$sendingAccountPassword = 'Checked1';
+// Recipient (To:) Details - Change this to the email details of who will receive all the emails from the website.
+$recipientEmail = <EMAIL>; // REQUIRED value.
+$recipientName = 'John Doe'; // REQUIRED value.
+// Email details - Change these to suit your website needs
+$email"
+"// $mail->SMTPDebug = 2;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl'; //Modificar
+$mail->Host = 'smtp.gmail.com'; //Modificar
+$mail->Port = 465; //Modificar
+$mail->Username = <EMAIL>; //Modificar
+$mail->Password = 'ZPRfw5RY'; //Modificar
+$mail->setFrom(<EMAIL>, 'ADMINISTRADOR'); //Modificar
+$mail->addAddress($email, $nombre);
+$mail->IsHTML(true);
+$mail->Subject = $asunto;
+$mail->Body = $cuerpo;
+$mail->send();"
+"$mail = new PHPMailer();
+try {
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com'; // Host de conexin SMTP
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>; // Usuario SMTP
+$mail->Password = 'Splendid1'; // Password SMTP
+$mail->SMTPSecure = 'ssl'; // Activar seguridad TLS
+$mail->Port = 465; // Puerto SMTP
+$mail->setFrom(<EMAIL>); // Mail del remitente
+$mail->addAddress($emailDestino); // Mail del destinatario
+$mail->isHTML(true);
+$mail->Subject = 'Cambio de contrasea'; // Asunto del mensaje"
+"$login = $_GET[login];
+$password = md5($_GET[password]);
+$servername = ""localhost"";
+$dbusername = ""root"";
+$dbpassword = ""Lapan11na"";
+$dbname = ""snakeascii"";
+// Create connection
+$conn = new mysqli($servername, $dbusername, $dbpassword, $dbname);
+// Check connection
+if ($conn->connect_error) {
+die(""Connection failed: "" . $conn->connect_error);
+}
+$sql = ""SELECT * FROM account"";"
+"23 define( 'DB_NAME', 'database_name_here' );
+24
+25 /** MySQL database username */
+26 define( 'DB_USER', 'username_here' );
+27
+28 /** MySQL database password */
+29 define( 'DB_PASSWORD', '' );
+30
+31 /** MySQL hostname */
+32 define( 'DB_HOST', 'localhost' );
+33
+34 /** Database Charset to use in creating database tables. */
+35 define( 'DB_CHARSET', 'utf8' );"
+"const DB_HOST = ""localhost"";
+const DB_USER = ""root"";
+const DB_PASS = ""FCul4bby9"";
+const DB_NAME = ""bd_mudanza"";
+// const DB_HOST = ""localhost"";
+// const DB_USER = ""transportemudanzas_app"";
+// const DB_PASS = ""FCul4bby9"";
+// const DB_NAME = ""transportemudanzas_app"";
+const DB_CHARSET = ""charset=utf8"";
+//constantes de encriptacion
+define('METHOD','AES-256-CBC');
+define('SECRET_KEY','');
+define('SECRET_IV','101712');"
+"$regadress = $_POST[regadress];
+//$mail->SMTPDebug = 3; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; //
+$mail->Password = 'Shamus11'; //
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to /
+$mail->setFrom(<EMAIL>); // ?
+$mail->addAddress(<EMAIL>); //
+//$mail->addAddress(<EMAIL>); // Name is optional
+//$mail->addReplyTo(<EMAIL>, 'Information');"
+"}
+public function email()
+{
+// Create the Transport
+$transport = (new \Swift_SmtpTransport('smtp.126.com',25)) //
+->setUsername(<EMAIL>) //
+->setPassword('') //
+;
+// Create the Mailer using your created Transport
+$mailer = new \Swift_Mailer($transport);
+// Create a message
+$message = (new \Swift_Message('126')) //
+->setFrom([<EMAIL> => 'muzi']) //"
+"$sign = md5($sign_str);
+return curl_http_post(PUSH_MESSAGE_URL, array('caller' => PUSH_MESSAGE_CALLER, 'time' => $time, 'msg' => $msg, 'action' => $action, 'sign' => $sign, 'users' => $users));
+}
+//
+function send_email($email, $subject = 'OA-', $body = '') {
+$mail_username = <EMAIL>;
+$mail_password = 'Abby1234';
+$mail_host = 'smtp.163.com';
+$mail = new PHPMailer();
+$mail->isSMTP();
+$mail->Host = $mail_host;
+$mail->SMTPAuth = true;
+$mail->Username = $mail_username;"
+"$cfg_updateperi = '15';
+$cfg_sendmail_bysmtp = 'Y';
+$cfg_smtp_server = 'smtp.qq.com';
+$cfg_smtp_port = '25';
+$cfg_smtp_usermail = 'desdev@vip.qq.com';
+$cfg_smtp_user = 'desdev';
+$cfg_smtp_password = 'CWeSc6iG';
+$cfg_online_type = 'nps';
+$cfg_upload_switch = 'Y';
+$cfg_allsearch_limit = '1';
+$cfg_rewrite = 'N';
+$cfg_delete = 'Y';
+$cfg_keywords = ',LED';"
+"'WEB_COPYRIGHT' => 'CopyRight 2013 All Right Reserved',
+'WEB_COUNT' => '',
+'WEB_BAIDU' => '',
+'IS_INQUIRY' => '0',
+'IS_EMAIL' => '0',
+'EMAIL_PORT' => '25',
+'EMAIL_HOST' => 'smtp.163.com',
+'EMAIL_USERNAME' => <EMAIL>,
+'EMAIL_PASSWORD' => '1Jojomo',
+'EMAIL_FROMNAME' => 'wtcms',
+'EMAIL_TO' => <EMAIL>,
+'SEND_WAY' => '1',
+'IS_ONLINE' => '1',"
+"try {
+$mail->SMTPDebug = 2;
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com;';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = 'Diablo69';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+//$mail->setFrom(<EMAIL>, 'Alankar Shelar');
+//$mail->addAddress(<EMAIL>);
+//$mail->addAddress(<EMAIL>, 'AS');
+//From email address and name"
+"$mail = new PHPMailer();
+$mail->CharSet = 'utf-8';
+$mail->isSMTP();
+$mail->Host = ""smtp.hostcreators.sk"";
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = ""95SPrUtN"";
+$mail->Port = 465;
+$mail->SMTPSecure = ""ssl"";
+$mail->isHTML(true);
+$mail->setFrom(<EMAIL>, ""Skauting BS"");
+$mail->addAddress($email);
+$mail->addBCC(<EMAIL>);"
+"$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = ""59oUoWqS"";
+$mail->Port = 465;
+$mail->SMTPSecure = ""ssl"";
+$mail->isHTML(true);
+$mail->setFrom(<EMAIL>, ""Skauting BS"");
+$mail->addAddress($email);
+$mail->addBCC(<EMAIL>);
+$mail->Subject = ""Registrcia do SLSK"";
+$mail->isHTML(true);
+$mail->AddEmbeddedImage('logo.png', 'skautingbs');
+$z_msg = """";"
+"$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'ssl';
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = '465';
+$mail->isHTML(true);
+$mail->Username = <EMAIL>;
+$mail->Password = 'CYnK9TvR';
+$mail->SetFrom('no-reply@tdtu.edu.vn', 'Admin');
+$mail->Subject = 'TDTU Classroom - Invitation';
+$content = ""
+<div>Invitation to join '"" . $name . ""' class came from "" . $lecturer . "": </div><br>
+<span style='background-color: yellow; font-size:150%;'>"" . $course_id . ""</span>
+"";"
+"define( 'DB_NAME', 'ryc9334br033waqu' );
+/** MySQL database username */
+// define( 'DB_USER', 'root' );
+define( 'DB_USER', 'eacbownbrijzxwmv' );
+/** MySQL database password */
+// define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+// define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'durvbryvdw2sjcm5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
+/** The Database Collate type. Don't change this if in doubt. */"
+"'URL_CASE_INSENSITIVE'=>true,
+//
+'DB_TYPE' => 'mysql', //
+'DB_HOST' => 'localhost', //
+'DB_NAME' => '91game', //
+'DB_USER' => 'root', //
+'DB_PWD' => 'CWNb8ek2', //
+'DB_PORT' => 13307, //
+'DB_PREFIX' => 'think_', //
+//
+'GIVE_GOLD'=>1000, //
+//
+'THINK_EMAIL' => array("
+"'DB_PORT' => 13307, //
+'DB_PREFIX' => 'think_', //
+//
+'GIVE_GOLD'=>1000, //
+//
+'THINK_EMAIL' => array(
+'SMTP_HOST' => 'smtp.163.com', //SMTP
+'SMTP_PORT' => '', //SMTP
+'SMTP_USER' => <EMAIL>, //SMTP
+'SMTP_PASS' => 'G3J4hkKb', //SMTP
+'FROM_EMAIL' => <EMAIL>, //EMAIL
+'FROM_NAME' => '', //
+'REPLY_EMAIL' => '', //EMAILEMAIL"
+"if ($message != $defaultMessage && $message != $_POST[message]) $body .= ' ' . $defaultMessage . "" <br> "";
+$body .= ucfirst($key) . ': ' . $row . '<hr>';
+}
+$mail = new Email(
+host: 'smtp.gmail.com',
+username: <EMAIL>,
+password: 'Always047',
+name: 'Gabriel'
+);
+$mail -> AddAddress(email: $email, name: $name);
+$mail -> FormatEmail(info: [
+'subject' => $subject,
+'body' => $body"
+"$body .= ucfirst($key) . ': ' . $row . '<hr>';
+}
+$mail = new Email(
+host: 'smtp.gmail.com',
+username: <EMAIL>,
+password: 'R1o2p3h',
+name: 'Gabriel'
+);
+$mail -> AddAddress(email: $email, name: $name);
+$mail -> FormatEmail(info: [
+'subject' => $subject,
+'body' => $body
+]);"
+"'DB_USER' => 'root', //
+'DB_PWD' => '8Deluxe', //
+'DB_PORT' => 3306, //
+'DB_PREFIX' => 'kuying_', //
+'DB_CHARSET'=> 'utf8', //
+//
+'MAIL_HOST' =>'smtp.126.com',
+'MAIL_SMTPAUTH' =>TRUE, //smtp
+'MAIL_USERNAME' =><EMAIL>,
+'MAIL_FROM' =><EMAIL>,
+'MAIL_FROMNAME' =>'HD',
+'MAIL_PASSWORD' =>'lXf4zO1797',
+'MAIL_CHARSET' =>'utf-8',"
+"$email = $_POST[user_email];
+//$mail->SMTPDebug = 3; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.mail.ru'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; //
+$mail->Password = 'PT7SWwJ'; //
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to /
+$mail->setFrom(<EMAIL>); // ?
+$mail->addAddress(<EMAIL>); //
+//$mail->addAddress(<EMAIL>); // Name is optional
+//$mail->addReplyTo(<EMAIL>, 'Information');"
+"$mail->SMTPSecure = 'tls';
+$mail->Host = ""smtp.gmail.com"";
+$mail->Port = 587;
+$mail->IsHTML(true);
+$mail->CharSet = 'UTF-8';
+$mail->Username = <EMAIL>;
+$mail->Password = ""Telef0n5"";
+$mail->SetFrom(<EMAIL>);
+$mail->Subject = $subject;
+$mail->Body = $msg;
+$mail->AddAddress($to);
+if (!$mail->Send()){
+return 0;"
+"public $access = '1';
+public $debug = '0';
+public $debug_lang = '0';
+public $dbtype = 'mysqli';
+public $host = 'localhost';
+public $user = '';
+public $password = 'Edkelly9';
+public $db = '';
+public $dbprefix = 'web_';
+public $live_site = '';
+public $secret = '';
+public $gzip = '1';
+public $error_reporting = 'default';"
+"/*$server = ""127.0.0.1"";
+$user = ""root"";
+$pwd = ""3X97Yzfs"";
+$database = ""mydb"";*/
+$server = ""fall-2020.cs.utexas.edu"";
+$user = ""cs329e_bulko_vnp337"";
+$pwd = ""3X97Yzfs"";
+$database = ""cs329e_bulko_vnp337"";
+$mysqli = new mysqli ($server, $user, $pwd, $database);
+if ($mysqli->connect_errno) {
+die('Connect Error: ' . $mysqli->connect_errno . "": "" . $mysqli->connect_error);
+}
+$user = $_POST[id];"
+"<h3>Reposicoes</h3>
+<?php
+try
+{
+$host = ""db.ist.utl.pt"";
+$user =""ist426047"";
+$password = ""1Verbena"";
+$dbname = $user;
+$db = new PDO(""pgsql:host=$host;dbname=$dbname"", $user, $password);
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+echo (""<br> </br>"");
+echo (""<a href=\""search_rep.php\"">Procurar</a>"");
+echo (""<br> </br>"");"
+"* @return [type] [description]
+*/
+public function sendmessage($code, $telephone) {
+$phone = $telephone;//
+$content = ""{$code}"";
+$sms_name = 'huhao';//
+$sms_pwd = 'A6r9pG';//
+$user = $sms_name;//
+$pass = md5(""$sms_pwd"");//
+$smsapi = ""http://api.smsbao.com/"";
+$sendurl = $smsapi . ""sms?u="" . $user . ""&p="" . $pass . ""&m="" . $phone . ""&c="" . urlencode($content);
+$result = file_get_contents($sendurl);
+if ($result != 0) {"
+"public $hosts;
+/** @var string type */
+public $type;
+/** @var Sapp app */
+private $app;
+/** @var string pass */
+private $pass = 'h6w3Zy';
+/** @var int is product */
+private $isProduct;
+/**
+* get hosts
+* @return array
+*/"
+"//Developed by https://webappdev.my.id/
+//Admin panel credentials
+$username = ""admin"";
+$password = ""BigB2002"";
+//Database connection
+$host = ""localhost"";
+$databaseprefix = ""whatsupcakes_"";
+$databasename = ""mydatabase"";
+$dbuser = ""root"";
+$dbpassword = ""BigB2002"";
+$connection = mysqli_connect($host, $dbuser, $dbpassword, $databasename);
+$connection->set_charset(""utf8"");
+//Database table names"
+"* @link https://fr.wordpress.org/support/article/editing-wp-config-php/.
+*
+* @package WordPress
+*/
+// ** Rglages MySQL - Votre hbergeur doit vous fournir ces informations. ** //
+/** Nom de la base de donnes de WordPress. */
+define( 'DB_NAME', 'wordpress' );
+/** Utilisateur de la base de donnes MySQL. */
+define( 'DB_USER', 'root' );
+/** Mot de passe de la base de donnes MySQL. */
+define( 'DB_PASSWORD', '' );
+/** Adresse de lhbergement MySQL. */
+define( 'DB_HOST', 'localhost' );"
+"// 'MEMECACHED_WEIGHT' => array(33,67),//
+//
+'THINK_EMAIL' => array(
+'SMTP_HOST' => 'smtp.163.com', //SMTP
+'SMTP_PORT' => '465', //SMTP
+'SMTP_USER' => <EMAIL>, //SMTP
+'SMTP_PASS' => 'S86V09eT28iK', //SMTP
+'FROM_EMAIL' => <EMAIL>, //EMAIL
+'FROM_NAME' => '', //
+'REPLY_EMAIL' => <EMAIL>, //EMAILEMAIL
+'REPLY_NAME' => ' ', //
+),
+);"
+");"";
+$this->DB->query($sql);
+}
+public function insertSampleData($dbName)
+{
+//default password is for testing
+$basePassword = password_hash("""", PASSWORD_DEFAULT);
+//db name either gamingsite or hindisite
+$sql = ""insert into AccountType values (5,'admin',true,true,true);"";
+$this->DB->query($sql);
+$sql = ""insert into AccountType values (4,'moderator',true,true,false);"";
+$this->DB->query($sql);
+$sql = ""insert into AccountType values (1,'user',true,false,false);"";"
+"$pub->setImage($request->get('image'));
+$subject='commenntaire';
+$message='commentaire recu';
+$mail=$k;
+$username=<EMAIL>;
+$mailer=$this->container->get('mailer');
+$transport= \Swift_SmtpTransport::newInstance('smpt.gmail.com',465,'ssl')->setUsername(<EMAIL>)->setPassword('');
+$mailer=\Swift_Mailer::newInstance($transport);
+$message=\Swift_Message::newInstance('test')->setSubject($subject)->setFrom(<EMAIL>)->setTo($mail)->setBody($message);
+$this->get('mailer')->send($message);
+$em=$this->getDoctrine()->getManager();
+$em->persist($pub);
+$em->flush();"
+"$mail->isSMTP();
+$mail->SMTPSecure = ""tls"";
+$mail->Debugoutput = 'html';
+$mail->Host = ""smtp.gmail.com"";
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = ""NMuh5Zho"";
+$mail->setFrom(<EMAIL>, 'admin');
+$mail->IsHTML(true);
+$mail->addAddress($email);
+$mail->Subject = 'Temporary Password';
+$mail->Body = $mail_message;"
+"require ""PHPMailerAutoload.php"";
+$mail = new PHPMailer;
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup server
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'TcB592SU'; // SMTP password
+$mail->SMTPSecure = 'tls'; // Enable encryption, 'ssl' also accepted
+$mail->Port = 587; //Port Number
+$mail->From = <EMAIL>; //From Email Id
+$mail->FromName = 'Sky Auctions '; //From Email Id Display Name
+//$mail->addAddress(<EMAIL>, 'Josh Adams'); // Add a recipient
+$mail->addAddress($_POST[uname]); // Name is optional"
+"$updateTable = $DB->update(""sp_epay"", $update_array, $where);
+function checkMTBTransaction($txid) {
+$url = ""https://mbank.mutualtrustbank.com/MTBEcomService/MTBEcomService.asmx"";
+#credentials
+$params = array(
+""userName""=>""shurjomukhiMtbAdmin"",
+""password""=>""FL007yhH"",
+""merchantTransId""=>$txid
+);
+#soap request
+$params = '<?xml version=""1.0"" encoding=""utf-8""?>
+<soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/"">
+<soap:Body>"
+"];
+#netstat -tunlp|grep 9501 kill -9 3905
+const buildServer = [
+'host' => '107.172.99.86',
+'port' => 22,
+'username' => 'root',
+'password' => 'Meatbal1',
+'ssh2_auth' => 'password',
+'pubkey' => '',
+'prikey' => '',
+'WebSocketServer' => [
+'type'=>'ws://',
+'config' => ["
+"// urls
+define('ROOT', 'http://localhost/mvc2020/app/views/assets/');
+/*
+define('DATABASE', [
+'host' => 'localhost',
+'dbname' => 'id13594392_aulab3',
+'user' => '',
+'password' => 'Nevfy25',
+'options' => [
+PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+PDO::ATTR_CASE => PDO::CASE_NATURAL,
+PDO::ATTR_EMULATE_PREPARES, false"
+"define('ROOT', 'http://localhost/mvc2020/app/views/assets/');
+/*
+define('DATABASE', [
+'host' => 'localhost',
+'dbname' => 'id13594392_aulab3',
+'user' => 'id13594392_thiago',
+'password' => 'rfg7uXzd',
+'options' => [
+PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
+PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+PDO::ATTR_CASE => PDO::CASE_NATURAL,
+PDO::ATTR_EMULATE_PREPARES, false
+],"
+"* @link https://codex.wordpress.org/Editing_wp-config.php
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress');
+/** MySQL database username */
+define('DB_USER', 'mysql');
+/** MySQL database password */
+define('DB_PASSWORD', '');
+/** MySQL hostname */
+define('DB_HOST', 'mysql-service');"
+"// MySQL Hostname
+$sql_db_host = ""localhost"";
+// MySQL Database User
+$sql_db_user = ""root"";
+// MySQL Database Password
+$sql_db_pass = ""Y5WTf2tE"";
+// MySQL Database Name
+$sql_db_name = ""tv1video"";
+// Site URL
+$site_url = ""http://localhost/tv1video""; // e.g (http://example.com)
+// Purchase code
+$purchase_code = ""0c1dd597-fd44-472b-a32b-9225ed11614a""; // Your purchase code, don't give it to anyone.
+?>"
+"class DBController
+{
+// Database Connection Properties
+protected $host = 'localhost';
+protected $user = 'root';
+protected $password = '2adD2KiA';
+protected $database = ""trbshopee"";
+// connection property
+public $con = null;
+// call constructor
+public function __construct()
+{
+$this->con = mysqli_connect($this->host, $this->user, $this->password, $this->database);"
+"'mailer' => [
+'class' => 'yii\swiftmailer\Mailer',
+'transport' => [
+'class' => 'Swift_SmtpTransport',
+'host' => 'smtp.gmail.com',
+'username' => <EMAIL>,
+'password' => '48k28XbFyp4B',
+'port' => '465',
+'encryption' => 'ssl',
+],
+],
+'log' => [
+'traceLevel' => YII_DEBUG ? 3 : 0,"
+"<?php
+extract($_POST);
+/*$server='localhost';
+$user='root';
+$pass='FtVZHrA2';
+$db='portfolio';
+$cnx= mysqli_connect($server,$user,$pass,$db);
+if (!$cnx)
+{
+echo ""erreur"";
+}
+if(isset($_POST[ajouter]))
+{"
+"//Server settings
+$mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Winning6';
+$mail->setFrom('no-reply@howcode.org'); // SMTP password
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 465;
+$mail->Subject=$subject;
+$mail->Body='Nom : ' . $name .'<br>' . 'Email : ' . $email . '<br>Message : ' . $message ;
+$mail->addAddress(<EMAIL>); // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above"
+"</head>
+<?php
+$host = ""host=127.0.0.1"";
+$port = ""port=5432"";
+$dataBaseName = ""dbname=postgres"";
+$user = ""user=postgres"";
+$password = ""835VGvs8"";
+$dataBase = pg_connect(""$host $port $dataBaseName $user $password "");
+$postgresql = ""pgsql:$host; port=5432; $dataBaseName; $user; $password"";
+try {
+$PDO = new PDO($postgresql);
+$pgSelect = ""SELECT * from account"";
+if (isset($_POST[edit])) {"
+"<?php
+$database = [
+'DB_HOST' => 'mysql',
+'DB_USERNAME' => 'root',
+'DB_PASSWORD' => 'DuBois75',
+'DB_NAME' => 'maindb',
+'DB_PORT' => '3306',
+];
+$mailconfig = [
+'MAIL_HOST' => 'smtp.googlemail.com',
+'MAIL_USERNAME' => <EMAIL>,
+'MAIL_PASSWORD' => 'DuBois75',
+'MAIL_SECURITY' => 'ssl',"
+"* @link https://.org/support/article/editing-wp-config-php/
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', '' );
+/** MySQL database username */
+define( 'DB_USER', 'root' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );"
+"'viewPath' => '@app/mail',
+'messageConfig' => [
+'charset' => 'UTF-8',
+'from' => [<EMAIL> => 'Shoppyland by Honey'],
+],
+//comment the following array to send mail using php's mail function
+'transport' => [
+'class' => 'Swift_SmtpTransport',
+'host' => 'smtpout.secureserver.net',
+'username' => <EMAIL>,
+'password' => 'Burldog4',
+'port' => '80',
+//'encryption' => 'tls',"
+"//'encryption' => 'tls',
+]
+/*'transport' => [
+'class' => 'Swift_SmtpTransport',
+'host' => 'smtp.office365.com',
+'username' => <EMAIL>,
+'password' => 'Karmagedon7',
+'port' => '587',
+'encryption' => 'tls',
+]*/
+/*
+'transport' => [
+'class' => 'Swift_SmtpTransport',"
+"$alert = '';
+try{
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>; // Gmail address which you want to use as SMTP server
+$mail->Password = '83A16i07pr0fess0r'; // Gmail address Password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = '587';
+$mail->setFrom(<EMAIL>); // Gmail address which you used as SMTP server
+$mail->addAddress($email); // Email address where you want to receive emails (you can use any of your gmail address including the gmail address which you used as SMTP server)
+$mail->isHTML(true);
+$mail->Subject = 'ONE TIME PASSWORD';"
+"| Supported: ""smtp"", ""sendmail"", ""mailgun"", ""ses"",
+| ""postmark"", ""log"", ""array""
+|
+*/
+'mailers' => [
+'smtp' => [
+'transport' => 'smtp',
+'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+'port' => env('MAIL_PORT', 587),
+'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+'username' => env(<EMAIL>),
+'password' => env(''),
+],"
+"//Server settings
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '95VcBCQFVuEqQ'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'Educacin Finanziera');
+$mail->addAddress(<EMAIL>,);
+// Content"
+"$mail->From = <EMAIL>; //remitente
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'tls'; //seguridad
+$mail->Host = ""smtp.gmail.com""; // servidor smtp
+$mail->Port = 587; //puerto
+$mail->Username =<EMAIL>; //nombre usuario
+$mail->Password = 'nick5260T'; //contrasea
+//Agregar destinatario
+$mail->AddAddress($_POST[email]);
+$mail->Subject = $_POST[subject];
+$mail->Body = $_POST[message];
+//Avisar si fue enviado o no y dirigir al index
+if ($mail->Send()) {"
+"$this->db->join(""m_user u"", ""u.id=l.id_user"", ""join"");
+$toko = $this->db->get('m_toko t')->row();
+$this->load->library('email');
+$setting=$this->db->get('s_sistem')->row();
+//kalo pake gmail ini
+// $config = Array(
+// 'protocol' => 'smtp',
+// 'smtp_host' => 'ssl://smtp.gmail.com',
+// 'smtp_port' => '465',
+// 'smtp_user' => 'email',
+// 'smtp_pass' => '6k5dF562',
+// 'smtp_timeout' => 30,
+// 'mailtype' => 'html',"
+"{
+//Server settings
+//$mail->SMTPDebug = 2; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'email1.liconsa.gob.mx'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'exrodriguez@liconsa.gob.mx'; // SMTP username
+$mail->Password = 'Z8DCeosN';// SMTP password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587; // TCP port to connect to
+$mail->SMTPOptions = array(
+'ssl' => array(
+'verify_peer' => false,"
+"$config[proxy_ips] = '';
+/* End of file config.php */
+/* Location: ./application/config/config.php */
+/*Configuracion de la base de datos del multi_tenant */
+$config[multi_tenant_host] = ""ec2-35-163-242-38.us-west-2.compute.amazonaws.com"";
+$config[multi_tenant_user] = ""vendtyMaster"";
+$config[multi_tenant_pass] = ""Byntarka8"";
+/*$config[multi_tenant_host] = ""localhost"";
+$config[multi_tenant_user] = ""root"";
+$config[multi_tenant_pass] = ""Byntarka8"";*/
+/*Nombre de la aplicacion*/
+$config[site_title] = ""Vendty System Pos"";
+/*Facebook config*/"
+"//Server settings
+// $mail->SMTPDebug = 2; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '9FmYehyA'; // SMTP password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'Vision Secure Support Team');
+// $mail->addAddress(<EMAIL>); // Add a recipient
+// Attachments"
+"'captcha_admin_login' => '2',
+'captcha_user_login' => '2',
+'captcha_user_register' => '1',
+'captcha_feedback' => '1',
+'smtp_server' => 'SMTP.163.com',
+'smtp_user' => <EMAIL>,
+'smtp_password' => 'corvetteX6X6X6',
+'smtp_port' => '465',
+'smtp_secure' => 'ssl',
+'admin_mult_ip_login' => '1',
+'upload_goods_filesize' => 307200,
+'visitor_stats' => '0',
+'goods_hot_searches' => '',"
+"{
+$request =""""; //initialise the request variable
+$param[method]= ""sendMessage"";
+$param[send_to] = ""91"".$mob;
+$param[msg] = $msg;
+$param[userid] = ""2000022557"";
+$param[password] = ""jiyv7y2L"";
+$param[v] = ""1.1"";
+$param[msg_type] = ""TEXT""; //Can be ""FLASH?/""UNICODE_TEXT""
+$param[auth_scheme] = ""PLAIN"";
+//Have to URL encode the values
+foreach($param as $key=>$val) {
+$request.= $key.""="".urlencode($val);"
+"// $mail -> SMTPAuth = true;
+// $mail -> SMTPSecure = 'ssl';
+// $mail -> Host = ""smtp.gmail.com"";
+// $mail -> Port = 465;
+// $mail -> IsHTML(true);
+// $mail -> Username = <EMAIL>;
+// $mail -> Password = ""J5LJga29"";
+// $mail -> SetFrom(<EMAIL>);
+// $mail -> Subject = $mailsub;
+// $mail -> Body = $mailMsg;
+// $mail -> AddAddress($mailto);
+// if(!$mail->Send()){
+// echo ""Mail not sent!"";"
+"define('BUCKET', 'tobemaker-pub');
+define('QINIU_UP','http://up.qiniu.com/');
+define('QINIU_DOWN','http://'.BUCKET.'.qiniudn.com/');
+//
+define('MAIL_HOST','smtp.126.com');
+define('MAIL_ADDRESS', <EMAIL>);
+define('MAIL_PASS', '');
+define('MAIL_USER', 'tobemaker');
+//
+//
+function __autoload($class_name) {
+require_once ROOT_PATH. 'class/' . strtolower($class_name) . '.php';
+}"
+"//Server settings
+//$mail->SMTPDebug = 2; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'ssl://smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '20WhNp06'; // SMTP password
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 465; // TCP port to connect to
+$mail->SMTPOptions = array(
+'ssl' => array(
+'verify_peer' => false,
+'verify_peer_name' => false,"
+"$mail->isSMTP();
+//$mail->CharSet = 'UTF-8';
+//$mail->Encoding = 'base64';
+//$mail->Host = 'smtp.office365.com';
+//$mail->SMTPAuth = true;
+//$mail->Username = <EMAIL>;
+//$mail->Password = ""4BWVunMu"";
+//$mail->SMTPSecure = 'tls';
+//$mail->Port = 587;
+$mail->CharSet = 'UTF-8';
+$mail->Encoding = 'base64';
+$mail->Host = 'a2plcpnl0823.prod.iad2.secureserver.net';
+$mail->SMTPAuth = true;"
+"//$mail->Port = 587;
+$mail->CharSet = 'UTF-8';
+$mail->Encoding = 'base64';
+$mail->Host = 'a2plcpnl0823.prod.iad2.secureserver.net';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = ""94q4lqu1VOHPE"";
+$mail->SMTPSecure = 'tls';
+$mail->Port = 25;
+## MENSAJE A ENVIAR
+$mail->setFrom($email);
+$mail->addAddress(<EMAIL>);
+$mail->isHTML(true);"
+"$mail->IsSMTP();
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = ""ssl""; // sets the prefix to the servier
+$mail->Host = ""smtp.gmail.com""; // sets GMAIL as the SMTP server
+$mail->Port = 465; // set the SMTP port for the GMAIL server
+$mail->Username = <EMAIL>; // GMAIL username
+$mail->Password = ""T4r4nt1n""; // GMAIL password
+$email_from = <EMAIL>;
+$name_from = ""Trips SV"";
+$email = mysqli_real_escape_string($connection, $_POST[email]);
+if(filter_var($email, FILTER_VALIDATE_EMAIL) !== false){
+$query = ""SELECT * from usuarios where correo = '$email'"";
+$result = mysqli_query($connection, $query);"
+"$mail->IsSMTP(); // Set mailer to use SMTP
+$mail->Host = ""webmail.vvnlive.co.in""; // Specify main and backup server
+//$mail->Host = ""Give IP Address""; // If the above does not work.
+$mail->Port = 25; // Set the SMTP port
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = ""team@vvnlive.co.in""; // SMTP username
+$mail->Password = ""30mHhgsVfFng""; // SMTP password
+//$mail->SMTPSecure = ""ssl""; // Enable encryption, 'ssl' also accepted
+$mail->From = 'team@vvnlive.co.in';
+$mail->FromName = 'Team VVNLive ';
+$mail->AddAddress($email); // Add a recipient
+$mail->IsHTML(true); // Set email format to HTML
+$mail->Subject = 'VVNLive Vendor Password';"
+"$tag =$_POST[tag];
+header('Content-type: application/json');
+if (!empty($tag)) {
+$username ='shimon';
+$password ='ufkPh7';
+$host ='avim.eu';
+$dbname = 'catfeeder';
+// Create connection
+$conn = mysqli_connect($host, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+die(""Connection failed: "" . mysqli_connect_error());
+}"
+"//Server settings
+// $mail->SMTPDebug = 3; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '2PKozT69'; // SMTP password
+$mail->Port = 587; // TCP port to connect to
+//Recipients
+$mail->setFrom(<EMAIL>, 'Cute Sharmili');
+$mail->addAddress(<EMAIL>, 'deepa '); // Add a recipient
+// $mail->addAddress(<EMAIL>); // Name is optional
+// $mail->addReplyTo(<EMAIL>, 'Information');"
+"$mail->SMTPAuth = true; // enable SMTP authentication
+$mail->IsHTML(true);
+$mail->SMTPSecure = ""ssl""; // sets the prefix to the servier
+$mail->Host = ""smtp.gmail.com""; // sets GMAIL as the SMTP server smtp.gmail.com
+$mail->Port = 465; // set the SMTP port for the GMAIL server
+$mail->Username = <EMAIL>; // GMAIL username
+$mail->Password = ""Johnny2""; // GMAIL password
+$mail->SetFrom(<EMAIL>, '[Admin] ABC Jobs Pte Ltd');
+//$mail->AddReplyTo(<EMAIL>,""First Last"");
+$mail->Subject = ""Email"";
+//$mail->AltBody = ""To view the message, please use an HTML compatible email viewer!""; // optional, comment out and test
+//$mail->MsgHTML($body);
+$mail->Body = ""HELLOOOOO"";"
+"* @link https://codex.wordpress.org/Editing_wp-config.php
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wordpress');
+/** MySQL database username */
+define('DB_USER', 'wordpress');
+/** MySQL database password */
+define('DB_PASSWORD', '');
+/** MySQL hostname */
+define('DB_HOST', 'localhost');"
+"// $mail->SMTPDebug = 4; // Enable verbose debug output
+//
+// $mail->isSMTP(); // Set mailer to use SMTP
+// $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+// $mail->SMTPAuth = true; // Enable SMTP authentication
+// $mail->Username = <EMAIL>; // SMTP username
+// $mail->Password = '1Ghhhhh'; // SMTP password
+// $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+// $mail->Port = 587; // TCP port to connect to
+//
+// $mail->setFrom(<EMAIL>, 'Sonjoy-WebAppDev');
+// $mail->addAddress($UserEmail, $FullName); // Add a recipient
+//// $mail->addAddress(<EMAIL>); // Name is optional"
+"* @link https://wordpress.org/support/article/editing-wp-config-php/
+*
+* @package WordPress
+*/
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wordpress');
+/** MySQL database username */
+define( 'DB_USER', 'root');
+/** MySQL database password */
+define( 'DB_PASSWORD', '');
+/** MySQL hostname */
+define( 'DB_HOST', 'database');"
+"{
+public function connect(): PDO
+{
+try {
+$databaseHost = ""localhost"";
+$databaseUser = ""becode"";
+$databasePassword = ""79GiaA"";
+$databaseName = ""php_crud"";
+$driverOptions = [PDO::MYSQL_ATTR_INIT_COMMAND => ""SET NAMES 'utf8'"",
+PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,];
+//echo 'Connected successfully';
+return new PDO('mysql:host=' . $databaseHost . ';dbname=' . $databaseName, $databaseUser, $databasePassword, $driverOptions);"
+"private $pwd = 'Ipecac74';
+private $db = 'garage';
+public function __construct(){
+$this->host = 'localhost';
+$this->user = 'root';
+$this->pwd = 'Ipecac74';
+$this->db = 'garage';
+}
+// methode die verbinding opzet met database
+public function verbinding(){
+$dsn = 'mysql:host='.$this->host.';dbname='.$this->db;
+$pdo = new PDO($dsn, $this->user, $this->pwd);
+return $pdo;"
+"/**
+* Date: 2017/5/4
+* Time: 11:08
+*/
+class SendMail
+{
+const HOST = 'smtp.163.com';
+const USER_NAME = 'xxxxxx';
+const PASSWD = 'xj7KMb';
+const PORT = 25;
+public $mail;
+public function __construct()
+{"
+"$row = mysqli_fetch_array($result);
+if($row && $row[email]==$lost_email&&strpos($lost_email,'@')){
+$_SESSION[lost_user_id]=$lost_user_id;
+$_SESSION[lost_key]=getToken(16);
+require_once ""include/email.class.php"";
+//******************** ********************************
+$smtpserver = ""smtp.126.com"";//SMTP
+$smtpserverport =25;//SMTP
+$smtpusermail = <EMAIL>;//SMTP
+$smtpemailto = $row[email];//
+$smtpuser = <EMAIL>;//SMTP
+$smtppass = ""E3NASYdh"";//SMTP
+$mailtitle = ""OJ"";//"
+"define('DIR_CLIENTS', 'C:/www/RNGportal/clients/');
+define('DIR_APP', 'C:/www/RNGportal/app/');
+define('DIR_BUILDER', 'C:/www/RNGportal/builder/');
+/** SMTP Credentials **/
+define('SMTP_HOST', 'mail.rnggaming.com');
+define('SMTP_USERNAME', <EMAIL>);
+define('SMTP_PASSWORD', '');
+define('SMTP_PORT', '465');
+/** MySQL settings - You can get this info from your web host **/
+/*MySQL database host*/
+define('DB_HOSTNAME', 'localhost');
+/*MySQL database username*/
+define('DB_USERNAME', 'root');"
+"/** MySQL settings - You can get this info from your web host **/
+/*MySQL database host*/
+define('DB_HOSTNAME', 'localhost');
+/*MySQL database username*/
+define('DB_USERNAME', 'root');
+/*MySQL database password*/
+define('DB_PASSWORD', '');
+/*MySQL database Name*/
+define('DB_DATABASE', 'office_manager');
+/*Table Prefix*/
+define('DB_PREFIX', 'kk_');
+define('AUTH_KEY', '');
+define('LOGGED_IN_SALT', '');"
+"// Language
+var $Language;
+// Database connection info
+var $Host = 'localhost';
+var $Port = 3306;
+var $Username = 'root';
+var $Password = '1Bomj2000';
+var $DbName = 'sistemigreja';
+// ADODB (Access/SQL Server)
+var $CodePage = 65001; // Code page
+// Database
+var $StartQuote = ""`"";
+var $EndQuote = ""`"";"
+"$mail->IsSMTP();
+$mail->CharSet='UTF-8'; //
+$mail->SMTPAuth = true; //
+$mail->Port = 25;
+$mail->Host = ""smtp.163.com"";
+$mail->Username = <EMAIL>;
+$mail->Password = ""3zO77ozlxC"";
+//$mail->IsSendmail(); //sendmailCould not execute: /var/qmail/bin/sendmail
+$mail->AddReplyTo(<EMAIL>,""IT"");//
+$mail->From = <EMAIL>;
+$mail->FromName = ""IT"";
+$mail->AddAddress($to);
+$mail->Subject = ""IT"";"
+"$mail->SMTPAuth=true;
+$mail->SMTPSecure='ssl';
+$mail->Host=""smtp.gmail.com"";
+$mail->Port=465;
+$mail->IsHTML(true);
+$mail->Username=(<EMAIL>);
+$mail->Password=""38W4oNAu"";
+$mail->SetFrom(<EMAIL>);
+$mail->Subject=$_POST[subject];
+$mail->Body=$_POST[body];
+$mail->AddAddress($_POST[to]);
+if(!$mail->Send()){
+echo ""Error"";"
+"'default_user_portrait' => 'default_user_portrait.gif',
+'delivery_isuse' => '0',
+'deliver_region' => '1,36,37',
+'email_addr' => <EMAIL>,
+'email_host' => 'smtp.qiye.aliyun.com',
+'email_id' => <EMAIL>,
+'email_pass' => '5Y7a8GoQ',
+'email_port' => '465',
+'email_type' => '1',
+'enabled_subdomain' => '0',
+'exppoints_rule' => 'a:4:{s:9:""exp_login"";i:0;s:12:""exp_comments"";i:0;s:13:""exp_orderrate"";s:1:""1"";s:12:""exp_ordermax"";s:9:""100000000"";}',
+'goods_verify' => '1',
+'groupbuy_allow' => '0',"
+"if ($_SESSION[id]=="""") {
+header('location: loginPage.php');
+}
+//Database information
+$servername = ""localhost"";
+$username = ""root"";
+$password = ""69PZuH6QymBEA"";
+$dbname = ""BTS_db"";
+$errorMessage = """";
+//connect to the database
+$db = new mysqli($servername, $username, $password, $dbname);
+?>
+<html>"
+"//Server settings
+$mail->SMTPDebug = 2;//SMTP::DEBUG_SERVER; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.office365.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'auvoQ37P68'; // SMTP password
+$mail->SMTPSecure = 'tls'; //PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'noreply@isaski');
+$mail->addAddress($destinatario, 'To: '); // Add a recipient
+//$mail->addAddress('ellen@example.c"
+"$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = ""smtp.gmail.com"";
+$mail->Port = 587; // or 587
+$mail->IsHTML(true);
+$mail->Username = <EMAIL>;
+$mail->Password = ""53MEmhxr98rQg"";
+$mail->SetFrom(<EMAIL>,""BRAI"");
+$mail->Subject = ""BRAI Certificate"";
+$mail->Body = ""<b>Dear $name1 ($name)</b>,<br><br>
+Greetings from BRAI!<br><br>
+Please click on below link to download your BRAI Membership certificate.<br><br>
+<a href='https://brai.in/braicertificate/pdf/$filename.pdf'><h3>Click Here To Download Certificate</h3></a>"
+"$CONFIG[DATABASE'][0]['DATABASE] = ""touchbase_2014"";
+$CONFIG[DATABASE'][1]['HOST] = ""localhost"";
+$CONFIG[DATABASE'][1]['USERNAME] = ""root"";
+$CONFIG[DATABASE'][1]['PASSWORD] = ""1Kennbea"";
+$CONFIG[DATABASE'][1]['DATABASE] = ""nextgen_report_2014"";
+$CONFIG[DATABASE']['MSSQL'][0]['HOST] = 'modist_stg';
+$CONFIG[DATABASE']['MSSQL'][0]['USERNAME] = 'wedhus';
+$CONFIG[DATABASE']['MSSQL'][0]['PASSWORD] = 'JaSm1Ne';
+$CONFIG[DATABASE']['MSSQL'][0]['DATABASE] = 'modistaging_new';
+}else{
+$CONFIG[DATABASE'][0]['HOST] = ""localhost"";
+$CONFIG[DATABASE'][0]['USERNAME] = ""root"";
+$CONFIG[DATABASE'][0]['PASSWORD] = ""1Kennbea"";"
+"$CONFIG[DATABASE'][0]['DATABASE] = ""touchbase_2014"";
+$CONFIG[DATABASE'][1]['HOST] = ""localhost"";
+$CONFIG[DATABASE'][1]['USERNAME] = ""root"";
+$CONFIG[DATABASE'][1]['PASSWORD] = ""Intweb99"";
+$CONFIG[DATABASE'][1]['DATABASE] = ""nextgen_report_2014"";
+$CONFIG[DATABASE']['MSSQL'][0]['HOST] = 'modist_stg';
+$CONFIG[DATABASE']['MSSQL'][0]['USERNAME] = 'wedhus';
+$CONFIG[DATABASE']['MSSQL'][0]['PASSWORD] = '6U6mPact';
+$CONFIG[DATABASE']['MSSQL'][0]['DATABASE] = 'modistaging_new';
+}
+$CONFIG[SERVICE_URL] = ""service/"";
+$CONFIG[salt] = '';
+/* DATETIME SET */"
+"// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'rbdekorc_zavese' );
+/** MySQL database username */
+define( 'DB_USER', 'rbdekorc' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'ftp.rb12dekor.com' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );"
+"//Server settings
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER; // Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = 'Fatigue1'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'NTI Ecoomerce');
+$mail->addAddress($newUser->getEmail(), $newUser->getName()); // Add a recipient
+// Content"
+"//este ejemplo va a estar en el subdirectorio includes
+$mail->PluginDir = ""../include/"";
+$mail->Mailer = ""smtp"";
+// ++ EXCHANGE MSC ++
+// ++ EXCHANGE MSC ++
+$userName= 'nala\robot.sion';
+$pass = '8uPRvb';
+$mail->IsSMTP();
+$mail->SMTPSecure = 'tls';
+$mail->SMTPAuth = true;
+$mail->Host = 'mail.mscgva.ch'; // IP 193.138.73.142
+$mail->Username = $userName;
+$mail->Password = $pass;"
+"$mail->SMTPAuth = true;
+// $mail->SMTPDebug = 2;
+$mail->Debugoutput = function($str, $level) {$GLOBALS[status][] = $str;};
+//
+$mail->Host = 'smtp.gmail.com'; // SMTP
+$mail->Username = <EMAIL>; //
+$mail->Password = 'Mm111qm'; //
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 465;
+$mail->setFrom(<EMAIL>, ' '); //
+//
+$mail->addAddress('den-zoloto2012@yandex.ru');
+//"
+"$mail = new PHPMailer;
+$mail->isSMTP();
+//$mail->CharSet = 'UTF-8'; // Set mailer to use SMTP
+$mail->Host = 'smtp-mail.outlook.com'; //'mail.fugenx.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'no-reply@parentcraftindia.com'; //<EMAIL>; // SMTP username
+$mail->Password = 'Lk19ETZP'; // SMTP password
+$mail->SMTPSecure = 'STARTTLS'; // Enable TLS encryption, `ssl` also accepted STARTTLS
+$mail->Port = 587; //465; // TCP port to connect to
+$mail->setFrom($fromemail, 'Parentcraft India');
+$mail->addAddress($toemail); // Add a recipient
+$mail->addReplyTo($fromemail, 'Parentcraft India');
+$mail->Subject = $subj;"
+"//
+header('content-type:text/html;charset=utf-8');
+//define
+define('HOST','localhost');//
+define('USERNAME','root');//
+define('PASSWORD','');//
+define('DBNAME','huaweimall');//
+// $
+//php new mysqli()
+$conn = new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
+//post$_POST[']get$_GET[']
+// $user = $_POST[username];
+// $pass = sha1($_POST[userpassword]);"
+"//Set the encryption system to use - ssl (deprecated) or tls
+$mail->SMTPSecure = 'ssl';
+//Whether to use SMTP authentication
+$mail->SMTPAuth = true;
+// set the SMTP port for the GMAIL server
+$mail->Username = <EMAIL>; // SMTP account username
+$mail->Password = ""Catori2797""; // SMTP account password
+//$mail->AddReplyTo(<EMAIL>, 'Gmail Hidayath');
+/* include '../OpenDb.php';
+$select_emails=""select * from Flexi_solar_Reports_email where user_type=1"";
+$rs_emails=mysqli_query($conn2,$select_emails) or die(""error 101"".mysqli_error($conn2));
+while($row_emails=mysqli_fetch_array($rs_emails))
+{"
+"$mail->SMTPDebug = 2;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = ""ssl"";
+$mail->Host = ""smtp.gmail.com"";
+$mail->Port = 465;
+$mail->Username = <EMAIL>;
+$mail->Password = ""49ersFan"";
+$mail->SetFrom(<EMAIL>, 'SerkOnline');
+$mail->isHTML(true);
+$mail->Subject = ""Nueva orden registrada - Nro "".$order_number;
+$mail->Body = $body;
+$mail->AddAddress(<EMAIL>);
+$mail->CharSet = 'UTF-8';"
+"$mail->Host = ""smtp.163.com"";
+$mail->Port = 25;
+$mail->SMTPAuth = true;
+$mail->CharSet = ""UTF-8"";
+$mail->Encoding = ""base64"";
+$mail->Username = <EMAIL>;
+$mail->Password = ""n0g1eY"";
+$mail->Subject = """";
+$mail->Prom =<EMAIL>;
+$mail->FromName ="""";
+$address =<EMAIL>;
+$mail->AddAddress($address,"""");
+$mail->AddAttachment('xx.xls','.xls');"
+"}
+}
+//Assings the current timestamp as last activity
+$_SESSION[last_action] = time();
+$_SESSION[servername] = ""romoserver.local"";
+$_SESSION[username] = ""hellweek"";
+$_SESSION[password] = ""52wHH3Ny"";
+$_SESSION[dbName] = ""LedLightSystem"";
+function getDatabaseConnection()
+{
+// Create connection
+$conn = new mysqli($_SESSION[servername], $_SESSION[username], $_SESSION[password] , $_SESSION[dbName]);
+// Check connection"
+"//Server settings
+$mail->SMTPDebug = 0; // Enable verbose debug output
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'benefactoremprendum@um.edu.mx'; // SMTP username
+$mail->Password = 'JGcourt2'; // SMTP password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
+$mail->Port = 587; // TCP port to connect to
+// verificaciones humanas
+// echo $email.""<br />"";
+// echo $nombre.""<br />"";
+// echo $asunto.""<br />"";"
+"$mail = new PHPMailer;
+$mail->SMTPDebug = 0;
+$mail->isSMTP();
+$mail->Host = 'mail.webtechsystem.com';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = '1Bougeard1';
+//$mail->SMTPSecure = 'tls';
+$mail->setFrom('info@mgtdemo.co.uk', 'cleaner');
+foreach($to as $address) {
+$mail->addAddress($address);
+}
+$mail->isHTML(true);"
+"$Birth=$BirthYear.'/'.$BirthMonth.'/'.$BirthDate;
+$_SESSION[fname] = $fname;
+$_SESSION[email] = $email;
+$servername = ""localhost"";
+$username = ""root"";
+$password= ""27I6lWIj3QCTc"";
+$dbname=""collegewtl"";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+die(""Connection failed: "" . mysqli_connect_error());
+}
+$sql1=""SELECT * FROM verification"";"
+"return false;
+}
+}
+/*
+*
+*/
+function alipay_send_email($user = <EMAIL>, $pwd = '32qVThlanqQII', $tomail = <EMAIL>,$url, $arr = array()) {
+Vendor('Email.Email');
+$mail = new \Email();
+$config[smtp_pass] = 25; //
+$config[protocol] = 'smtp';
+$config[smtp_host] = 'smtp.163.com';
+$config[smtp_user] = $user; //"
+"$mail->SMTPAuth = true; // enable SMTP authentication
+$mail->SMTPSecure = ""ssl""; // sets the prefix to the servier
+$mail->Host = ""smtp.gmail.com""; // sets GMAIL as the SMTP server
+$mail->Port = 465;
+$mail->isHTML(true);
+$mail->Username = <EMAIL>;
+$mail->Password = ""X8vEKOSeFhSG"";
+$mail->setFrom(<EMAIL>);
+$mail->Subject = ""Reservation"";
+require_once('EvenementC.php');
+$evenement1C=new EvenementC();
+$list=$evenement1C->trouverEvent($ticket->getIdEvent());
+foreach($list as $row){"
+"//$objMail->SMTPDebug = 2; // Enable verbose debug output
+//$objMail->Debugoutput = 'html';
+$objMail->isSMTP(); // Set objMailer to use SMTP
+$objMail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+$objMail->SMTPAuth = true; // Enable SMTP authentication
+$objMail->Username = <EMAIL>; // SMTP username
+$objMail->Password = '9QLKp2'; // SMTP password
+$objMail->SMTPSecure = 'tls'; // Enable TLS encryption, 'ssl' also accepted
+$objMail->Port = 587; // TCP port to connect to
+$objMail->CharSet = 'UTF-8';
+//Recipients
+$objMail->setFrom(<EMAIL>, 'Sistema AML');
+//$objMail->addAddress(<EMAIL>, 'Joe User'); // Add a recipient"
+"// var_dump($_POST);
+// exit();
+// $mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+// $mail->Username = <EMAIL>; // SMTP username
+// $mail->Password = 'Cj4NMygf'; // SMTP password
+$emailer->Username = <EMAIL>; // SMTP username
+$emailer->Password = 'Cj4NMygf'; // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+$mail->Port = 587;
+$mail->isHTML(true);
+$mail->Subject = ""Referral Form"";"
+"$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+$mail->SMTPDebug = 2;// Enable verbose debug output
+$mail->isSMTP(); // Send using SMTP
+$mail->Host = 'smtp.gmail.com'; // Set the SMTP server to send through
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = <EMAIL>; // SMTP username
+$mail->Password = '140Um7'; // SMTP password
+$mail->SMTPSecure = 'PHPMailer::ENCRYPTION_SMTPS'; // Enable TLS encryption; `` encouraged
+$mail->Port = 587; // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+//Recipients
+$mail->setFrom(<EMAIL>, 'Mailer');
+$mail->addAddress($email); // Name is optional
+$mail->addCC($email);"
+"$email->CharSet ='utf-8';
+//SMTP
+$email->Host = 'smtp.163.com';
+//SMTP
+$email->Username = <EMAIL>;
+//SMTP
+$email->Password = '46XJlLRkqWjHs';
+//
+$email->From = $to;
+//
+$email->Subject = $title;
+//
+$email->Body = $content;"
+"$mail->CharSet = ""UTF-8""; //
+$mail->SMTPDebug = 0; //
+$mail->isSMTP(); // SMTP
+$mail->Host = 'smtp.163.com'; // SMTP
+$mail->SMTPAuth = true; // SMTP
+$mail->Username = <EMAIL>; // SMTP
+$mail->Password = 'E7ujklo9'; // SMTP (163)
+$mail->SMTPSecure = 'ssl'; // TLS ssl
+$mail->Port = 465; // 25 465
+$mail->setFrom($from); //
+$mail->addAddress($to); //
+//$mail->addAddress(<EMAIL>); //
+$mail->addReplyTo($from); //"
+"// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define( 'DB_NAME', 'wdcr' );
+/** MySQL database username */
+define( 'DB_USER', 'root' );
+/** MySQL database password */
+define( 'DB_PASSWORD', '' );
+/** MySQL hostname */
+define( 'DB_HOST', 'localhost' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8mb4' );
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );"
+"try {
+$mail->SMTPDebug = 2;
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com;';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = 'Bill18199';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+$mail->setFrom(<EMAIL>, 'abhishek');
+$mail->addAddress(<EMAIL>, 'Name');
+$mail->isHTML(true);
+$mail->Subject = 'Subject';"
+"$mail->Host = 'smtp.gmail.com;';
+$mail->SMTPAuth = true;
+$mail->Username = <EMAIL>;
+$mail->Password = 'M1ichiga';
+$mail->SMTPSecure = 'tls';
+$mail->Port = 587;
+$mail->setFrom(<EMAIL>, '');
+$mail->addAddress(<EMAIL>, 'Name');
+$mail->isHTML(true);
+$mail->Subject = 'Subject';
+$mail->Body = 'HTML message body in <b>bold</b> ';
+$mail->AltBody = 'Body in plain text for non-HTML mail clients';
+$mail->send();"
+"$mail->Mailer = ""smtp"";
+/*
+// ** COOCE **
+$mail->Host = ""cooce.com.mx"";
+$mail->SMTPAuth = true;
+$mail->Username = ""@cooce.com.mx"";
+$mail->Password = ""Gqz32Ah"";
+*/
+// ** YAHOO **
+$mail->Host = ""smtp.mail.yahoo.com"";
+$mail->Port = 25; //465 para ssl
+$mail->SMTPAuth = true;
+$mail->Username = ""nesmaster"";"
